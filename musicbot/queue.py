@@ -1,14 +1,13 @@
-import copy
+import asyncio
 import datetime
 import random
 import time
-import traceback
+import urllib
 from collections import deque
 from itertools import islice
 
 from youtube_dl.utils import DownloadError, ExtractorError, UnsupportedError
 
-import asyncio
 from musicbot.discogs import get_entry as get_discogs_track
 from musicbot.entry import (DiscogsEntry, RadioSongEntry, RadioStationEntry,
                             SpotifyEntry, StreamEntry, TimestampEntry,
@@ -104,7 +103,7 @@ class Queue(EventEmitter):
             if e.exc_info[0] == UnsupportedError:
                 print("[STREAM] Assuming content is a direct stream")
 
-            elif e.exc_info[0] == URLError:
+            elif e.exc_info[0] == urllib.URLError:
                 if os.path.exists(os.path.abspath(song_url)):
                     raise ExtractionError(
                         "This is not a stream, this is a file path.")
@@ -217,9 +216,21 @@ class Queue(EventEmitter):
             info = await self.downloader.extract_info(self.loop, query, download=False, process=False)
 
         if "entries" in info:
-            return ["http://youtube.com/watch?v=" + entry["id"] for entry in info["entries"]]
+            return [entry["url"] for entry in info["entries"]]
         else:
             return await self.get_entry(info, **meta)
+
+    async def get_entry_gen(self, url, **meta):
+        info = await self.downloader.extract_info(self.loop, url, download=False, process=False)
+
+        if "entries" in info:
+            return self.get_entries_from_urls_gen(*[entry["url"] for entry in info["entries"]])
+        else:
+            async def _tuple_gen_creator(collection):
+                for i, el in enumerate(collection):
+                    yield i, el
+
+            return _tuple_gen_creator([await self.get_entry(info, **meta)])
 
     async def get_entries_from_urls_gen(self, *urls, **meta):
         for ind, url in enumerate(urls):
@@ -228,6 +239,8 @@ class Queue(EventEmitter):
             except (ExtractionError, WrongEntryTypeError) as e:
                 print("Error while dealing with url \"{}\":\n{}".format(url, e))
                 yield ind, None
+                continue
+
             yield ind, entry
 
     async def get_ytdl_data(self, song_url):
@@ -342,9 +355,9 @@ class Queue(EventEmitter):
 
         return entry
 
-    def add_entries(self, entries):
+    def add_entries(self, entries, placement=None):
         for entry in entries:
-            self._add_entry(entry, more_to_come=True)
+            self._add_entry(entry, placement=placement, more_to_come=True)
 
         GieselaServer.send_player_information(self.player.voice_client.server.id)
         self.emit("entry-added", queue=self, entry=entry)
