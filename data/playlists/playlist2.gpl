@@ -1,0 +1,1843 @@
+[
+    {
+        "version": 103,
+        "type": "YoutubeEntry",
+        "expected_filename": "cache/audio_cache/youtube-pzzhpx8fF10-AlunaGeorge-Supernatural_MUSIC_VIDEO.webm",
+        "video_id": "pzzhpx8fF10",
+        "url": "https://www.youtube.com/watch?v=pzzhpx8fF10",
+        "title": "AlunaGeorge-\"Supernatural\" [MUSIC VIDEO]",
+        "duration": 191,
+        "thumbnail": "https://i.ytimg.com/vi/pzzhpx8fF10/hqdefault.jpg",
+        "description": "*I do not own the rights to the visual/audio. For artistic/promotional use only. No copyright infringement intended.*",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 0,
+                    "timestamp": 1502553811
+                }
+            }
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-0dFz10R529g-Gareth_Emery_feat._Christina_Novelli_-_Concrete_Angel_Official_Music_Video.webm",
+        "video_id": "0dFz10R529g",
+        "url": "https://www.youtube.com/watch?v=0dFz10R529g",
+        "title": "Gareth Emery feat. Christina Novelli - Concrete Angel [Official Music Video]",
+        "duration": 239,
+        "thumbnail": "https://i.ytimg.com/vi/0dFz10R529g/maxresdefault.jpg",
+        "description": "Check out all Gareth Emery singles and remixes on Spotify: http://bit.ly/GE-MUSIC\n\n'Concrete Angel': the new vocal single by Gareth Emery.\nAvailable now: http://www.beatport.com/track/concret...\n\nGet a free Gareth Emery bootleg at: http://on.fb.me/GarethEmeryFreeBootleg\n\nhttp://www.facebook.com/garethemery\nhttp://www.twitter.com/garethemery\nhttp://www.garethemery.com/home/\n\nDirector // Ross Ching // http://rossching.com\nProduction // A Common Thread // http://acommonthread.tv",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 1,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Concrete Angel (Mix Cut) - RAM Remix",
+        "artist": "Gareth Emery & Christina Novelli",
+        "artist_image": "https://i.scdn.co/image/9638f2b3fe6c5b536e6208fc8ee1d8d7fcdff907",
+        "cover": "https://i.scdn.co/image/c83adb824299012d54c62e29b349f9a6f3e63fc9",
+        "album": "Trance Top 1000 (Mini Mix 001) - Armada Music",
+        "spotify_data": {
+            "id": "6KfbtqiuVB8GoH0CpnJpR2",
+            "name": "Concrete Angel (Mix Cut) - RAM Remix",
+            "artists": [
+                {
+                    "id": "0hprEC0nsWuQPSHag1O2Vi",
+                    "name": "Gareth Emery",
+                    "images": [
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/f6f2bd108e9cb5afb3a5cf1cf0d2d978a3a5b05e",
+                            "width": 640
+                        },
+                        {
+                            "height": 320,
+                            "url": "https://i.scdn.co/image/27267f44359c78142a263d6ed244adf47bf0cfaa",
+                            "width": 320
+                        },
+                        {
+                            "height": 160,
+                            "url": "https://i.scdn.co/image/9638f2b3fe6c5b536e6208fc8ee1d8d7fcdff907",
+                            "width": 160
+                        }
+                    ],
+                    "genres": [
+                        "big room",
+                        "edm",
+                        "electro house",
+                        "progressive electro house",
+                        "progressive house",
+                        "progressive trance",
+                        "trance",
+                        "tropical house",
+                        "uplifting trance"
+                    ],
+                    "popularity": 64,
+                    "uri": "spotify:artist:0hprEC0nsWuQPSHag1O2Vi",
+                    "href": "https://open.spotify.com/artist/0hprEC0nsWuQPSHag1O2Vi"
+                },
+                {
+                    "id": "1dbzT291PCwwYJK0l3Tr1n",
+                    "name": "Christina Novelli",
+                    "images": [
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/92b7f96d690bb6dabeaf20ef0d02e5988a2cb36e",
+                            "width": 640
+                        },
+                        {
+                            "height": 320,
+                            "url": "https://i.scdn.co/image/0f1bc175e0d34d5e28963b7af6d93aeb7f6d022c",
+                            "width": 320
+                        },
+                        {
+                            "height": 160,
+                            "url": "https://i.scdn.co/image/19efedc5048b7700cdab016fdff559ebb2d194d0",
+                            "width": 160
+                        }
+                    ],
+                    "genres": [
+                        "progressive house",
+                        "progressive trance",
+                        "trance",
+                        "uplifting trance"
+                    ],
+                    "popularity": 59,
+                    "uri": "spotify:artist:1dbzT291PCwwYJK0l3Tr1n",
+                    "href": "https://open.spotify.com/artist/1dbzT291PCwwYJK0l3Tr1n"
+                },
+                {
+                    "id": "4f0a5IgkYFHFts5Z9N9SDX",
+                    "name": "RAM",
+                    "images": [
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/95376f323c85a241124195fff35023fb996e8f0a",
+                            "width": 640
+                        },
+                        {
+                            "height": 300,
+                            "url": "https://i.scdn.co/image/e03b6e4f00f91809e7bc76e522520ee41b86408b",
+                            "width": 300
+                        },
+                        {
+                            "height": 64,
+                            "url": "https://i.scdn.co/image/3194f84fe5ee138cf3fda7915ac48b1e0f9df559",
+                            "width": 64
+                        }
+                    ],
+                    "genres": [
+                        "deep uplifting trance",
+                        "progressive house",
+                        "progressive trance",
+                        "progressive uplifting trance",
+                        "trance",
+                        "uplifting trance"
+                    ],
+                    "popularity": 46,
+                    "uri": "spotify:artist:4f0a5IgkYFHFts5Z9N9SDX",
+                    "href": "https://open.spotify.com/artist/4f0a5IgkYFHFts5Z9N9SDX"
+                }
+            ],
+            "artist": "Gareth Emery & Christina Novelli",
+            "cover_url": "https://i.scdn.co/image/c83adb824299012d54c62e29b349f9a6f3e63fc9",
+            "duration": 53.897,
+            "album": {
+                "id": "0qopgIYRqbVlZGlzagWmcF",
+                "name": "Trance Top 1000 (Mini Mix 001) - Armada Music",
+                "artists": [
+                    {
+                        "id": "0LyfQWJT6nXafLPZqxe9Of",
+                        "name": "Various Artists",
+                        "images": [],
+                        "genres": [],
+                        "popularity": 0,
+                        "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of",
+                        "href": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/c83adb824299012d54c62e29b349f9a6f3e63fc9",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/3f4ca8b866ed8614e30ae581ddee063cbaa5b796",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/65aa093cdd41c0175f4fdd3823ae1cd102a09982",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:0qopgIYRqbVlZGlzagWmcF"
+            },
+            "popularity": 33,
+            "uri": "spotify:track:6KfbtqiuVB8GoH0CpnJpR2",
+            "query": "Gareth Emery Christina Novelli - Concrete Angel Music",
+            "certainty": 0.675
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-MMlVFa_754o-Gareth_Emery_feat._Lucy_Saunders_-_Sanctuary_Official_Music_Video.webm",
+        "video_id": "MMlVFa_754o",
+        "url": "https://www.youtube.com/watch?v=MMlVFa_754o",
+        "title": "Gareth Emery feat. Lucy Saunders - Sanctuary [Official Music Video]",
+        "duration": 245,
+        "thumbnail": "https://i.ytimg.com/vi/MMlVFa_754o/maxresdefault.jpg",
+        "description": "Check out all Gareth Emery singles and remixes on Spotify: http://bit.ly/GE-MUSIC\n\nNow released, click here to buy:\nhttp://bit.ly/GE_Sanctuary\n\nOfficial video of 'Sanctuary', the first single from Gareth Emery's debut album 'Northern Lights', due for release in September.\n\nGet a free Gareth Emery bootleg at: http://on.fb.me/GarethEmeryFreeBootleg\n\nhttp://www.facebook.com/garethemery\nhttp://www.twitter.com/garethemery\nhttp://www.garethemery.com/home/",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 2,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Sanctuary (Mix Cut)",
+        "artist": "Gareth Emery & Lucy Saunders",
+        "artist_image": "https://i.scdn.co/image/27267f44359c78142a263d6ed244adf47bf0cfaa",
+        "cover": "https://i.scdn.co/image/22db605f8c39376409c67d5cb6266856548a37ee",
+        "album": "Trance Top 1000 (Mini Mix 003) - Armada Music",
+        "spotify_data": {
+            "id": "27ad2uAytCmhQIxiMBuFAU",
+            "name": "Sanctuary (Mix Cut)",
+            "artists": [
+                {
+                    "id": "0hprEC0nsWuQPSHag1O2Vi",
+                    "name": "Gareth Emery",
+                    "images": [
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/f6f2bd108e9cb5afb3a5cf1cf0d2d978a3a5b05e",
+                            "width": 640
+                        },
+                        {
+                            "height": 320,
+                            "url": "https://i.scdn.co/image/27267f44359c78142a263d6ed244adf47bf0cfaa",
+                            "width": 320
+                        },
+                        {
+                            "height": 160,
+                            "url": "https://i.scdn.co/image/9638f2b3fe6c5b536e6208fc8ee1d8d7fcdff907",
+                            "width": 160
+                        }
+                    ],
+                    "genres": [
+                        "big room",
+                        "edm",
+                        "electro house",
+                        "progressive electro house",
+                        "progressive house",
+                        "progressive trance",
+                        "trance",
+                        "tropical house",
+                        "uplifting trance"
+                    ],
+                    "popularity": 64,
+                    "uri": "spotify:artist:0hprEC0nsWuQPSHag1O2Vi",
+                    "href": "https://open.spotify.com/artist/0hprEC0nsWuQPSHag1O2Vi"
+                },
+                {
+                    "id": "6yXkEpQnC8kNDoSHUa3U66",
+                    "name": "Lucy Saunders",
+                    "images": [],
+                    "genres": [],
+                    "popularity": 43,
+                    "uri": "spotify:artist:6yXkEpQnC8kNDoSHUa3U66",
+                    "href": "https://open.spotify.com/artist/6yXkEpQnC8kNDoSHUa3U66"
+                }
+            ],
+            "artist": "Gareth Emery & Lucy Saunders",
+            "cover_url": "https://i.scdn.co/image/22db605f8c39376409c67d5cb6266856548a37ee",
+            "duration": 67.808,
+            "album": {
+                "id": "0rGpgnJk4z871r4Ze8kK3d",
+                "name": "Trance Top 1000 (Mini Mix 003) - Armada Music",
+                "artists": [
+                    {
+                        "id": "0LyfQWJT6nXafLPZqxe9Of",
+                        "name": "Various Artists",
+                        "images": [],
+                        "genres": [],
+                        "popularity": 0,
+                        "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of",
+                        "href": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/22db605f8c39376409c67d5cb6266856548a37ee",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/62b4f036cb662f2cdebc0e6e2db2b9941db21077",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/a94b3a7bd78a45de55ad2a6933aecf7da11d7dd8",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:0rGpgnJk4z871r4Ze8kK3d"
+            },
+            "popularity": 45,
+            "uri": "spotify:track:27ad2uAytCmhQIxiMBuFAU",
+            "query": "Gareth Emery Lucy Saunders - Sanctuary Music",
+            "certainty": 0.6666666666666666
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-hRVOOwFNp5U-Hopsin_-_ILL_MIND_OF_HOPSIN_5.webm",
+        "video_id": "hRVOOwFNp5U",
+        "url": "https://www.youtube.com/watch?v=hRVOOwFNp5U",
+        "title": "Hopsin - ILL MIND OF HOPSIN 5",
+        "duration": 307,
+        "thumbnail": "https://i.ytimg.com/vi/hRVOOwFNp5U/maxresdefault.jpg",
+        "description": "DOWNLOAD LINK!!!: http://bit.ly/LsIVVH\n\nhttps://www.facebook.com/hellohopsin\nhttps://www.twitter.com/hopsin\n\nFunk Volume\nhttps://www.myfunkvolume.com\n\nHit the dudes up below for some dope videos.\nhttp://www.rpinkall.wordpress.com/videos/ + @ryan_pinkall\nhttp://www.wiresideproductions.com +  @wiresideprod",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 3,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Ill Mind of Hopsin 5",
+        "artist": "Hopsin",
+        "artist_image": "https://i.scdn.co/image/6d27fe49ea485a327fbba269b7de7b3cffb09842",
+        "cover": "https://i.scdn.co/image/c86af2ed018c93913132a583d37582fb60dfa5ff",
+        "album": "Ill Mind of Hopsin 5 - Single",
+        "spotify_data": {
+            "id": "7dDLHlyZJBqEWSndlPWyCT",
+            "name": "Ill Mind of Hopsin 5",
+            "artists": [
+                {
+                    "id": "7EWU4FhUJM1sZQgQKdENeT",
+                    "name": "Hopsin",
+                    "images": [
+                        {
+                            "height": 667,
+                            "url": "https://i.scdn.co/image/6d27fe49ea485a327fbba269b7de7b3cffb09842",
+                            "width": 1000
+                        },
+                        {
+                            "height": 427,
+                            "url": "https://i.scdn.co/image/917572f3aea8b5734859de6c475fd4583d18fc4e",
+                            "width": 640
+                        },
+                        {
+                            "height": 133,
+                            "url": "https://i.scdn.co/image/0b733126722d28ca298293aa99438bb3a1d29dfa",
+                            "width": 200
+                        },
+                        {
+                            "height": 43,
+                            "url": "https://i.scdn.co/image/543bd2b75fc18512476113a09ddcfc1168da1fd0",
+                            "width": 64
+                        }
+                    ],
+                    "genres": [
+                        "deep underground hip hop",
+                        "gangster rap",
+                        "hip hop",
+                        "pop rap",
+                        "rap"
+                    ],
+                    "popularity": 70,
+                    "uri": "spotify:artist:7EWU4FhUJM1sZQgQKdENeT",
+                    "href": "https://open.spotify.com/artist/7EWU4FhUJM1sZQgQKdENeT"
+                }
+            ],
+            "artist": "Hopsin",
+            "cover_url": "https://i.scdn.co/image/c86af2ed018c93913132a583d37582fb60dfa5ff",
+            "duration": 289.004,
+            "album": {
+                "id": "5kRhn7K8D7txVpIGGWfVCu",
+                "name": "Ill Mind of Hopsin 5 - Single",
+                "artists": [
+                    {
+                        "id": "7EWU4FhUJM1sZQgQKdENeT",
+                        "name": "Hopsin",
+                        "images": [
+                            {
+                                "height": 667,
+                                "url": "https://i.scdn.co/image/6d27fe49ea485a327fbba269b7de7b3cffb09842",
+                                "width": 1000
+                            },
+                            {
+                                "height": 427,
+                                "url": "https://i.scdn.co/image/917572f3aea8b5734859de6c475fd4583d18fc4e",
+                                "width": 640
+                            },
+                            {
+                                "height": 133,
+                                "url": "https://i.scdn.co/image/0b733126722d28ca298293aa99438bb3a1d29dfa",
+                                "width": 200
+                            },
+                            {
+                                "height": 43,
+                                "url": "https://i.scdn.co/image/543bd2b75fc18512476113a09ddcfc1168da1fd0",
+                                "width": 64
+                            }
+                        ],
+                        "genres": [
+                            "deep underground hip hop",
+                            "gangster rap",
+                            "hip hop",
+                            "pop rap",
+                            "rap"
+                        ],
+                        "popularity": 70,
+                        "uri": "spotify:artist:7EWU4FhUJM1sZQgQKdENeT",
+                        "href": "https://open.spotify.com/artist/7EWU4FhUJM1sZQgQKdENeT"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/c86af2ed018c93913132a583d37582fb60dfa5ff",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/5fc6060f23e8aede911094c580b5cb8f283935fb",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/641b2f011b4aa19d7403b1a1c98deb8aee6e6b58",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:5kRhn7K8D7txVpIGGWfVCu"
+            },
+            "popularity": 66,
+            "uri": "spotify:track:7dDLHlyZJBqEWSndlPWyCT",
+            "query": "Hopsin - ILL MIND OF HOPSIN 5",
+            "certainty": 0.9642857142857143
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-QBsA2ETp7JA-Hopsin_-_ILL_MIND_OF_HOPSIN_7.webm",
+        "video_id": "QBsA2ETp7JA",
+        "url": "https://www.youtube.com/watch?v=QBsA2ETp7JA",
+        "title": "Hopsin - ILL MIND OF HOPSIN 7",
+        "duration": 350,
+        "thumbnail": "https://i.ytimg.com/vi/QBsA2ETp7JA/maxresdefault.jpg",
+        "description": "Download now on iTunes: http://flyt.it/poundsyndrome\n\nHopsin\nhttps://www.facebook.com/hellohopsin\nhttp://www.twitter.com/hopsin\nhttp://www.instagram.com/hopsinson\n\nProduced by Hopsin\n\nDirected by Hopsin\n\nFunk Volume\nhttp://www.myfunkvolume.com",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 4,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Ill Mind of Hopsin 7",
+        "artist": "Hopsin",
+        "artist_image": "https://i.scdn.co/image/0b733126722d28ca298293aa99438bb3a1d29dfa",
+        "cover": "https://i.scdn.co/image/9a767c1253d50699e1a58fd04b0ead873f4f6896",
+        "album": "Pound Syndrome",
+        "spotify_data": {
+            "id": "6rVujfYLm9YmdyjV5xTgsS",
+            "name": "Ill Mind of Hopsin 7",
+            "artists": [
+                {
+                    "id": "7EWU4FhUJM1sZQgQKdENeT",
+                    "name": "Hopsin",
+                    "images": [
+                        {
+                            "height": 667,
+                            "url": "https://i.scdn.co/image/6d27fe49ea485a327fbba269b7de7b3cffb09842",
+                            "width": 1000
+                        },
+                        {
+                            "height": 427,
+                            "url": "https://i.scdn.co/image/917572f3aea8b5734859de6c475fd4583d18fc4e",
+                            "width": 640
+                        },
+                        {
+                            "height": 133,
+                            "url": "https://i.scdn.co/image/0b733126722d28ca298293aa99438bb3a1d29dfa",
+                            "width": 200
+                        },
+                        {
+                            "height": 43,
+                            "url": "https://i.scdn.co/image/543bd2b75fc18512476113a09ddcfc1168da1fd0",
+                            "width": 64
+                        }
+                    ],
+                    "genres": [
+                        "deep underground hip hop",
+                        "gangster rap",
+                        "hip hop",
+                        "pop rap",
+                        "rap"
+                    ],
+                    "popularity": 70,
+                    "uri": "spotify:artist:7EWU4FhUJM1sZQgQKdENeT",
+                    "href": "https://open.spotify.com/artist/7EWU4FhUJM1sZQgQKdENeT"
+                }
+            ],
+            "artist": "Hopsin",
+            "cover_url": "https://i.scdn.co/image/9a767c1253d50699e1a58fd04b0ead873f4f6896",
+            "duration": 350.482,
+            "album": {
+                "id": "0gqrRf9j8TdNnn0HngmeRA",
+                "name": "Pound Syndrome",
+                "artists": [
+                    {
+                        "id": "7EWU4FhUJM1sZQgQKdENeT",
+                        "name": "Hopsin",
+                        "images": [
+                            {
+                                "height": 667,
+                                "url": "https://i.scdn.co/image/6d27fe49ea485a327fbba269b7de7b3cffb09842",
+                                "width": 1000
+                            },
+                            {
+                                "height": 427,
+                                "url": "https://i.scdn.co/image/917572f3aea8b5734859de6c475fd4583d18fc4e",
+                                "width": 640
+                            },
+                            {
+                                "height": 133,
+                                "url": "https://i.scdn.co/image/0b733126722d28ca298293aa99438bb3a1d29dfa",
+                                "width": 200
+                            },
+                            {
+                                "height": 43,
+                                "url": "https://i.scdn.co/image/543bd2b75fc18512476113a09ddcfc1168da1fd0",
+                                "width": 64
+                            }
+                        ],
+                        "genres": [
+                            "deep underground hip hop",
+                            "gangster rap",
+                            "hip hop",
+                            "pop rap",
+                            "rap"
+                        ],
+                        "popularity": 70,
+                        "uri": "spotify:artist:7EWU4FhUJM1sZQgQKdENeT",
+                        "href": "https://open.spotify.com/artist/7EWU4FhUJM1sZQgQKdENeT"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/9a767c1253d50699e1a58fd04b0ead873f4f6896",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/1a4b83025eceed43ce1a24a6ad86177dd6a257a1",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/1654f199649d95b19480e6f72c4d0581d14e118c",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:0gqrRf9j8TdNnn0HngmeRA"
+            },
+            "popularity": 61,
+            "uri": "spotify:track:6rVujfYLm9YmdyjV5xTgsS",
+            "query": "Hopsin - ILL MIND OF HOPSIN 7",
+            "certainty": 0.9642857142857143
+        }
+    },
+    {
+        "version": 103,
+        "type": "DiscogsEntry",
+        "expected_filename": "cache/audio_cache/youtube-qHHnQa4jFFI-Ian_Van_Dahl_feat_Marsha_-_Castles_In_The_Sky_Official_UK_Video_version.webm",
+        "video_id": "qHHnQa4jFFI",
+        "url": "https://www.youtube.com/watch?v=qHHnQa4jFFI",
+        "title": "Ian Van Dahl feat Marsha - Castles In The Sky (Official UK Video version)",
+        "duration": 223,
+        "thumbnail": "https://i.ytimg.com/vi/qHHnQa4jFFI/hqdefault.jpg",
+        "description": "Just found this nice tune on my hdd and I realised that youtube didn`t have this version uploaded yet. I did this capture in late 2006 from MTV Dance UK.",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 5,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Castles In The Sky (Extended Mix)",
+        "artist": "Ian Van Dahl",
+        "artist_image": "https://api-img.discogs.com/NkMyjW3ynfXow2Bs9Yto__uh6l0=/300x300/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-12789-1406228040-5679.jpeg.jpg",
+        "cover": "https://api-img.discogs.com/77xgMKlFdG0kIMt4j7iOmXHySEI=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3803054-1460722728-5619.jpeg.jpg",
+        "album": "Castles In The Sky"
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-cJLUb_bX5Lc-Kaskade_feat._Becky_Jean_Williams_-_Empty_Streets.webm",
+        "video_id": "cJLUb_bX5Lc",
+        "url": "https://www.youtube.com/watch?v=cJLUb_bX5Lc",
+        "title": "Kaskade feat. Becky Jean Williams - Empty Streets",
+        "duration": 253,
+        "thumbnail": "https://i.ytimg.com/vi/cJLUb_bX5Lc/maxresdefault.jpg",
+        "description": "Kaskade feat. Becky Jean Williams - Empty Streets from Ultra Records\n\nHis Album 'Dynasty' available here: http://bit.ly/ctYXuE",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 6,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Empty Streets",
+        "artist": "Kaskade & Becky Jean Williams",
+        "artist_image": "https://i.scdn.co/image/b8516f5776a6f5ac74df9e913a2e44ed0ee0d6bb",
+        "cover": "https://i.scdn.co/image/ca8827ebc555d5c4822e148b1741734fd8a53715",
+        "album": "Dynasty",
+        "spotify_data": {
+            "id": "29jcGEuwfbxLMwobORyvAD",
+            "name": "Empty Streets",
+            "artists": [
+                {
+                    "id": "6TQj5BFPooTa08A7pk8AQ1",
+                    "name": "Kaskade",
+                    "images": [
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/b8516f5776a6f5ac74df9e913a2e44ed0ee0d6bb",
+                            "width": 640
+                        },
+                        {
+                            "height": 320,
+                            "url": "https://i.scdn.co/image/1380c0b7b87acaa17ecb59925be2e9550eb317cc",
+                            "width": 320
+                        },
+                        {
+                            "height": 160,
+                            "url": "https://i.scdn.co/image/c8f14406dba1c59812e335dff82029b6f064e8b5",
+                            "width": 160
+                        }
+                    ],
+                    "genres": [
+                        "big room",
+                        "brostep",
+                        "chicago house",
+                        "edm",
+                        "electro house",
+                        "electronic trap",
+                        "house",
+                        "progressive electro house",
+                        "progressive house",
+                        "tropical house",
+                        "vocal house"
+                    ],
+                    "popularity": 72,
+                    "uri": "spotify:artist:6TQj5BFPooTa08A7pk8AQ1",
+                    "href": "https://open.spotify.com/artist/6TQj5BFPooTa08A7pk8AQ1"
+                },
+                {
+                    "id": "1eFkax0tuWawNaAIjnm5Pb",
+                    "name": "Becky Jean Williams",
+                    "images": [],
+                    "genres": [],
+                    "popularity": 33,
+                    "uri": "spotify:artist:1eFkax0tuWawNaAIjnm5Pb",
+                    "href": "https://open.spotify.com/artist/1eFkax0tuWawNaAIjnm5Pb"
+                }
+            ],
+            "artist": "Kaskade & Becky Jean Williams",
+            "cover_url": "https://i.scdn.co/image/ca8827ebc555d5c4822e148b1741734fd8a53715",
+            "duration": 246.626,
+            "album": {
+                "id": "1O23sy8Wad5DqsBuvNqsIl",
+                "name": "Dynasty",
+                "artists": [
+                    {
+                        "id": "6TQj5BFPooTa08A7pk8AQ1",
+                        "name": "Kaskade",
+                        "images": [
+                            {
+                                "height": 640,
+                                "url": "https://i.scdn.co/image/b8516f5776a6f5ac74df9e913a2e44ed0ee0d6bb",
+                                "width": 640
+                            },
+                            {
+                                "height": 320,
+                                "url": "https://i.scdn.co/image/1380c0b7b87acaa17ecb59925be2e9550eb317cc",
+                                "width": 320
+                            },
+                            {
+                                "height": 160,
+                                "url": "https://i.scdn.co/image/c8f14406dba1c59812e335dff82029b6f064e8b5",
+                                "width": 160
+                            }
+                        ],
+                        "genres": [
+                            "big room",
+                            "brostep",
+                            "chicago house",
+                            "edm",
+                            "electro house",
+                            "electronic trap",
+                            "house",
+                            "progressive electro house",
+                            "progressive house",
+                            "tropical house",
+                            "vocal house"
+                        ],
+                        "popularity": 72,
+                        "uri": "spotify:artist:6TQj5BFPooTa08A7pk8AQ1",
+                        "href": "https://open.spotify.com/artist/6TQj5BFPooTa08A7pk8AQ1"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ca8827ebc555d5c4822e148b1741734fd8a53715",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/356d0ad7e4040c300f482c536e44211c9e45e234",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/2553c23dfa77fd7c9c6715116cfdd3972ce5634a",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:1O23sy8Wad5DqsBuvNqsIl"
+            },
+            "popularity": 31,
+            "uri": "spotify:track:29jcGEuwfbxLMwobORyvAD",
+            "query": "Kaskade Becky Jean Williams - Empty Streets",
+            "certainty": 0.65625
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-xEOqt0PWXB0-Kaskade_-_Step_One_Two_HQ.webm",
+        "video_id": "xEOqt0PWXB0",
+        "url": "https://www.youtube.com/watch?v=xEOqt0PWXB0",
+        "title": "Kaskade - Step One Two (HQ)",
+        "duration": 196,
+        "thumbnail": "https://i.ytimg.com/vi/xEOqt0PWXB0/hqdefault.jpg",
+        "description": "Step One Two\" - track #4 from the album \"Strobelite Seduction\" available on Ultra Records - ultrarecords.co",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 7,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Step One Two",
+        "artist": "Kaskade",
+        "artist_image": "https://i.scdn.co/image/1380c0b7b87acaa17ecb59925be2e9550eb317cc",
+        "cover": "https://i.scdn.co/image/3581e4429dc5ea0508a5449850f2aa967ab4aa2a",
+        "album": "Strobelite Seduction",
+        "spotify_data": {
+            "id": "2b81QjZVYfa75vC5niRDac",
+            "name": "Step One Two",
+            "artists": [
+                {
+                    "id": "6TQj5BFPooTa08A7pk8AQ1",
+                    "name": "Kaskade",
+                    "images": [
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/b8516f5776a6f5ac74df9e913a2e44ed0ee0d6bb",
+                            "width": 640
+                        },
+                        {
+                            "height": 320,
+                            "url": "https://i.scdn.co/image/1380c0b7b87acaa17ecb59925be2e9550eb317cc",
+                            "width": 320
+                        },
+                        {
+                            "height": 160,
+                            "url": "https://i.scdn.co/image/c8f14406dba1c59812e335dff82029b6f064e8b5",
+                            "width": 160
+                        }
+                    ],
+                    "genres": [
+                        "big room",
+                        "brostep",
+                        "chicago house",
+                        "edm",
+                        "electro house",
+                        "electronic trap",
+                        "house",
+                        "progressive electro house",
+                        "progressive house",
+                        "tropical house",
+                        "vocal house"
+                    ],
+                    "popularity": 72,
+                    "uri": "spotify:artist:6TQj5BFPooTa08A7pk8AQ1",
+                    "href": "https://open.spotify.com/artist/6TQj5BFPooTa08A7pk8AQ1"
+                }
+            ],
+            "artist": "Kaskade",
+            "cover_url": "https://i.scdn.co/image/3581e4429dc5ea0508a5449850f2aa967ab4aa2a",
+            "duration": 200.28,
+            "album": {
+                "id": "3HmqTzRg3Ccs5vUVIlwh3Y",
+                "name": "Strobelite Seduction",
+                "artists": [
+                    {
+                        "id": "6TQj5BFPooTa08A7pk8AQ1",
+                        "name": "Kaskade",
+                        "images": [
+                            {
+                                "height": 640,
+                                "url": "https://i.scdn.co/image/b8516f5776a6f5ac74df9e913a2e44ed0ee0d6bb",
+                                "width": 640
+                            },
+                            {
+                                "height": 320,
+                                "url": "https://i.scdn.co/image/1380c0b7b87acaa17ecb59925be2e9550eb317cc",
+                                "width": 320
+                            },
+                            {
+                                "height": 160,
+                                "url": "https://i.scdn.co/image/c8f14406dba1c59812e335dff82029b6f064e8b5",
+                                "width": 160
+                            }
+                        ],
+                        "genres": [
+                            "big room",
+                            "brostep",
+                            "chicago house",
+                            "edm",
+                            "electro house",
+                            "electronic trap",
+                            "house",
+                            "progressive electro house",
+                            "progressive house",
+                            "tropical house",
+                            "vocal house"
+                        ],
+                        "popularity": 72,
+                        "uri": "spotify:artist:6TQj5BFPooTa08A7pk8AQ1",
+                        "href": "https://open.spotify.com/artist/6TQj5BFPooTa08A7pk8AQ1"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/3581e4429dc5ea0508a5449850f2aa967ab4aa2a",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/0cd11640ac1be47f01bb165b513a1da55b634b8b",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/2347b1b4d4f9d390e37ff14ac8010ca62124d343",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:3HmqTzRg3Ccs5vUVIlwh3Y"
+            },
+            "popularity": 32,
+            "uri": "spotify:track:2b81QjZVYfa75vC5niRDac",
+            "query": "Kaskade - Step One Two",
+            "certainty": 0.9523809523809523
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-xlNwtHsJ1Zs-Kerser_-_Bad_Habits.webm",
+        "video_id": "xlNwtHsJ1Zs",
+        "url": "https://www.youtube.com/watch?v=xlNwtHsJ1Zs",
+        "title": "Kerser - Bad Habits",
+        "duration": 284,
+        "thumbnail": "https://i.ytimg.com/vi/xlNwtHsJ1Zs/maxresdefault.jpg",
+        "description": "Kerser Track - Bad Habits. Off Album six 'Tradition'. iTunes link - http://kerser.lnk.to/TraditionAr . Also available from JB HI FI, Sanity and all good music stores, googleplay, spotify etc.\nClip By Steve Guzman. (SGZ)\nVocals Mixed and Recorded By Dave Petrovic.\nProduced By John Andrew. (Sinima)\nFollow Kerser:\nWebsite/Store www.emceekerser.com\nInstagram- www.instagram.com/kerserofficial\nFacebook - www.facebook.com/thekerser",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 8,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Bad Habits",
+        "artist": "Kerser",
+        "artist_image": "https://i.scdn.co/image/0e8e140b72e9ba498e175c318d9493892369d731",
+        "cover": "https://i.scdn.co/image/57408c0c72c85c93eb799f36235cafdfed26ad7e",
+        "album": "Tradition",
+        "spotify_data": {
+            "id": "0Pgu08kEH0vuiHRLOa2KeP",
+            "name": "Bad Habits",
+            "artists": [
+                {
+                    "id": "6aZHwfhoXFdJJvZdijsmy7",
+                    "name": "Kerser",
+                    "images": [
+                        {
+                            "height": 1000,
+                            "url": "https://i.scdn.co/image/14e34a0b0ad940e47373aac9d5fce829b031f944",
+                            "width": 1000
+                        },
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/0e8e140b72e9ba498e175c318d9493892369d731",
+                            "width": 640
+                        },
+                        {
+                            "height": 200,
+                            "url": "https://i.scdn.co/image/9e8985cb540ae61668427e138e78e34afa227054",
+                            "width": 200
+                        },
+                        {
+                            "height": 64,
+                            "url": "https://i.scdn.co/image/5a80fbbc83b4875a08a7b07143b809695028dd4e",
+                            "width": 64
+                        }
+                    ],
+                    "genres": [
+                        "australian hip hop"
+                    ],
+                    "popularity": 54,
+                    "uri": "spotify:artist:6aZHwfhoXFdJJvZdijsmy7",
+                    "href": "https://open.spotify.com/artist/6aZHwfhoXFdJJvZdijsmy7"
+                }
+            ],
+            "artist": "Kerser",
+            "cover_url": "https://i.scdn.co/image/57408c0c72c85c93eb799f36235cafdfed26ad7e",
+            "duration": 253.933,
+            "album": {
+                "id": "0A9VPVGYAmRzz02uX2JyVK",
+                "name": "Tradition",
+                "artists": [
+                    {
+                        "id": "6aZHwfhoXFdJJvZdijsmy7",
+                        "name": "Kerser",
+                        "images": [
+                            {
+                                "height": 1000,
+                                "url": "https://i.scdn.co/image/14e34a0b0ad940e47373aac9d5fce829b031f944",
+                                "width": 1000
+                            },
+                            {
+                                "height": 640,
+                                "url": "https://i.scdn.co/image/0e8e140b72e9ba498e175c318d9493892369d731",
+                                "width": 640
+                            },
+                            {
+                                "height": 200,
+                                "url": "https://i.scdn.co/image/9e8985cb540ae61668427e138e78e34afa227054",
+                                "width": 200
+                            },
+                            {
+                                "height": 64,
+                                "url": "https://i.scdn.co/image/5a80fbbc83b4875a08a7b07143b809695028dd4e",
+                                "width": 64
+                            }
+                        ],
+                        "genres": [
+                            "australian hip hop"
+                        ],
+                        "popularity": 54,
+                        "uri": "spotify:artist:6aZHwfhoXFdJJvZdijsmy7",
+                        "href": "https://open.spotify.com/artist/6aZHwfhoXFdJJvZdijsmy7"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/57408c0c72c85c93eb799f36235cafdfed26ad7e",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/2869ec50dabebe6cfda119b8ce6602f4822d0c25",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/7fcf106ba45426b7c6d77d7e3fc267f5fce0fe36",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:0A9VPVGYAmRzz02uX2JyVK"
+            },
+            "popularity": 48,
+            "uri": "spotify:track:0Pgu08kEH0vuiHRLOa2KeP",
+            "query": "Kerser - Bad Habits",
+            "certainty": 0.9444444444444444
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-88oGOEbzuZM-Kerser_-_Next_Step.webm",
+        "video_id": "88oGOEbzuZM",
+        "url": "https://www.youtube.com/watch?v=88oGOEbzuZM",
+        "title": "Kerser - Next Step",
+        "duration": 237,
+        "thumbnail": "https://i.ytimg.com/vi/88oGOEbzuZM/maxresdefault.jpg",
+        "description": "Next Step is the second single and the title track off 'Next Step' the 5th Kerser album which is now in stores and on iTUNES through ABK RECORDS, distro by ADA (Warner Music Australia). Purchase 'Next Step' NOW from in stores oR iTUNES now - https://itunes.apple.com/au/album/next-step/id1045027660\n\nProduced by John Andrew (Sinima)\nFilm Clip By Steve Guzman.\nVocals mixed and recorded by Dave Petrovic.\n\nFollow Kerser:\nWebsite/Store www.emceekerser.com\nInstagram- www.instagram.com/kerserofficial\nYouTube - www.youtube.com/thekerser\nTwitter- www.twitter.com/thekerser",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 9,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Next Step",
+        "artist": "Kerser",
+        "artist_image": "https://i.scdn.co/image/0e8e140b72e9ba498e175c318d9493892369d731",
+        "cover": "https://i.scdn.co/image/110e4c44e170f0d511b4103e41e4f20da38ba7ea",
+        "album": "Next Step",
+        "spotify_data": {
+            "id": "7qBuExrkOWaSSYOg9FrqDS",
+            "name": "Next Step",
+            "artists": [
+                {
+                    "id": "6aZHwfhoXFdJJvZdijsmy7",
+                    "name": "Kerser",
+                    "images": [
+                        {
+                            "height": 1000,
+                            "url": "https://i.scdn.co/image/14e34a0b0ad940e47373aac9d5fce829b031f944",
+                            "width": 1000
+                        },
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/0e8e140b72e9ba498e175c318d9493892369d731",
+                            "width": 640
+                        },
+                        {
+                            "height": 200,
+                            "url": "https://i.scdn.co/image/9e8985cb540ae61668427e138e78e34afa227054",
+                            "width": 200
+                        },
+                        {
+                            "height": 64,
+                            "url": "https://i.scdn.co/image/5a80fbbc83b4875a08a7b07143b809695028dd4e",
+                            "width": 64
+                        }
+                    ],
+                    "genres": [
+                        "australian hip hop"
+                    ],
+                    "popularity": 54,
+                    "uri": "spotify:artist:6aZHwfhoXFdJJvZdijsmy7",
+                    "href": "https://open.spotify.com/artist/6aZHwfhoXFdJJvZdijsmy7"
+                }
+            ],
+            "artist": "Kerser",
+            "cover_url": "https://i.scdn.co/image/110e4c44e170f0d511b4103e41e4f20da38ba7ea",
+            "duration": 224.613,
+            "album": {
+                "id": "1HUCaU6gGIAI1uFWpmelY5",
+                "name": "Next Step",
+                "artists": [
+                    {
+                        "id": "6aZHwfhoXFdJJvZdijsmy7",
+                        "name": "Kerser",
+                        "images": [
+                            {
+                                "height": 1000,
+                                "url": "https://i.scdn.co/image/14e34a0b0ad940e47373aac9d5fce829b031f944",
+                                "width": 1000
+                            },
+                            {
+                                "height": 640,
+                                "url": "https://i.scdn.co/image/0e8e140b72e9ba498e175c318d9493892369d731",
+                                "width": 640
+                            },
+                            {
+                                "height": 200,
+                                "url": "https://i.scdn.co/image/9e8985cb540ae61668427e138e78e34afa227054",
+                                "width": 200
+                            },
+                            {
+                                "height": 64,
+                                "url": "https://i.scdn.co/image/5a80fbbc83b4875a08a7b07143b809695028dd4e",
+                                "width": 64
+                            }
+                        ],
+                        "genres": [
+                            "australian hip hop"
+                        ],
+                        "popularity": 54,
+                        "uri": "spotify:artist:6aZHwfhoXFdJJvZdijsmy7",
+                        "href": "https://open.spotify.com/artist/6aZHwfhoXFdJJvZdijsmy7"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/110e4c44e170f0d511b4103e41e4f20da38ba7ea",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/a70b1ac04a5400ef827c4574f9b531dd33d59c39",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/696f13ee92bd2908b4313cc7dd7f7f7a3c22bfea",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:1HUCaU6gGIAI1uFWpmelY5"
+            },
+            "popularity": 44,
+            "uri": "spotify:track:7qBuExrkOWaSSYOg9FrqDS",
+            "query": "Kerser - Next Step",
+            "certainty": 0.9411764705882353
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-uIApqMCxUBk-Kosca_-_Let_The_Music_Play.webm",
+        "video_id": "uIApqMCxUBk",
+        "url": "https://www.youtube.com/watch?v=uIApqMCxUBk",
+        "title": "Kosca - Let The Music Play",
+        "duration": 196,
+        "thumbnail": "https://i.ytimg.com/vi/uIApqMCxUBk/maxresdefault.jpg",
+        "description": "Kosca - Let The Music Play (516 Music)\nBuy it on iTunes: https://itunes.apple.com/us/album/mashed-up/id619295027\n\n516 Music Online:\nhttp://www.516music.com\nhttp://www.twitter.com/516music\nhttp://www.facebook.com/516music\nhttp://www.soundcloud.com/516music",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 10,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Let the Music Play - Club Remix",
+        "artist": "Kosca",
+        "artist_image": "https://i.scdn.co/image/8a48bfd976091ecedf3f0f5d79188d547f6f2583",
+        "cover": "https://i.scdn.co/image/040eea308a599536703903e11211351ad14988f3",
+        "album": "The EDM Experience",
+        "spotify_data": {
+            "id": "4fPYNsqClpxAsYVnjR2GIp",
+            "name": "Let the Music Play - Club Remix",
+            "artists": [
+                {
+                    "id": "3ydjIwHul4t5HWbiIUa3VE",
+                    "name": "Kosca",
+                    "images": [
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/6a1e289ab552df79cc10ed61549c1cd3e732c26c",
+                            "width": 640
+                        },
+                        {
+                            "height": 300,
+                            "url": "https://i.scdn.co/image/8a48bfd976091ecedf3f0f5d79188d547f6f2583",
+                            "width": 300
+                        },
+                        {
+                            "height": 64,
+                            "url": "https://i.scdn.co/image/c1f05d4e406f506143193ed06e78fa179a936e9b",
+                            "width": 64
+                        }
+                    ],
+                    "genres": [],
+                    "popularity": 4,
+                    "uri": "spotify:artist:3ydjIwHul4t5HWbiIUa3VE",
+                    "href": "https://open.spotify.com/artist/3ydjIwHul4t5HWbiIUa3VE"
+                }
+            ],
+            "artist": "Kosca",
+            "cover_url": "https://i.scdn.co/image/040eea308a599536703903e11211351ad14988f3",
+            "duration": 263.453,
+            "album": {
+                "id": "64skDeVYSM5bDIM58STtNA",
+                "name": "The EDM Experience",
+                "artists": [
+                    {
+                        "id": "0LyfQWJT6nXafLPZqxe9Of",
+                        "name": "Various Artists",
+                        "images": [],
+                        "genres": [],
+                        "popularity": 0,
+                        "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of",
+                        "href": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/040eea308a599536703903e11211351ad14988f3",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/b40843c21f9934e2f477db66ef15c3ab8c05b2c6",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/4202d030ab227e4eaf9a0c41242a0620504aec80",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:64skDeVYSM5bDIM58STtNA"
+            },
+            "popularity": 0,
+            "uri": "spotify:track:4fPYNsqClpxAsYVnjR2GIp",
+            "query": "Kosca - Let The Music Play",
+            "certainty": 0.96
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-OjD0873AetQ-NOPASSPORT_-_One_Day_Burzhuy_remix.webm",
+        "video_id": "OjD0873AetQ",
+        "url": "https://www.youtube.com/watch?v=OjD0873AetQ",
+        "title": "NOPASSPORT - One Day ( Burzhuy remix )",
+        "duration": 243,
+        "thumbnail": "https://i.ytimg.com/vi/OjD0873AetQ/maxresdefault.jpg",
+        "description": "SUBSCRIBE / \u041f\u041e\u0414\u041f\u0418\u0428\u0418\u0421\u042c: http://goo.gl/VIOVXQ\nWATCH MORE / \u0421\u041c\u041e\u0422\u0420\u0418 \u0411\u041e\u041b\u042c\u0428\u0415 \u0412\u0418\u0414\u0415\u041e \u041e\u0422 DVJ BURZHUY: http://goo.gl/qqDb0n\n\nhttp://vk.com/burzhuy\nhttp://facebook.com/burzhuy.net",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 11,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "One Day - Ivan Pica Remix",
+        "artist": "Nopassport",
+        "artist_image": null,
+        "cover": "https://i.scdn.co/image/186dc0875f09ee4754bd721b2920d90f14a6d9ac",
+        "album": "Club Session pres. ADE 2012 Hot Picks",
+        "spotify_data": {
+            "id": "6R20ipXFVhEHJttlfxCslY",
+            "name": "One Day - Ivan Pica Remix",
+            "artists": [
+                {
+                    "id": "5B4JOL9eAST673RcAeYHGc",
+                    "name": "Nopassport",
+                    "images": [],
+                    "genres": [],
+                    "popularity": 1,
+                    "uri": "spotify:artist:5B4JOL9eAST673RcAeYHGc",
+                    "href": "https://open.spotify.com/artist/5B4JOL9eAST673RcAeYHGc"
+                }
+            ],
+            "artist": "Nopassport",
+            "cover_url": "https://i.scdn.co/image/186dc0875f09ee4754bd721b2920d90f14a6d9ac",
+            "duration": 432.38,
+            "album": {
+                "id": "7tCvwR2qOt8HDc8PHEUXr8",
+                "name": "Club Session pres. ADE 2012 Hot Picks",
+                "artists": [
+                    {
+                        "id": "0LyfQWJT6nXafLPZqxe9Of",
+                        "name": "Various Artists",
+                        "images": [],
+                        "genres": [],
+                        "popularity": 0,
+                        "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of",
+                        "href": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/186dc0875f09ee4754bd721b2920d90f14a6d9ac",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/5831cf08a237fe78729bc06300495fcdc78545e5",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/7eeb5f4b7add41bc867825a26525a587c1f1d1cf",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:7tCvwR2qOt8HDc8PHEUXr8"
+            },
+            "popularity": 0,
+            "uri": "spotify:track:6R20ipXFVhEHJttlfxCslY",
+            "query": "NOPASSPORT - One Day",
+            "certainty": 0.9473684210526315
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-CFF0mV24WCY-Tiesto_-_Red_Lights.webm",
+        "video_id": "CFF0mV24WCY",
+        "url": "https://www.youtube.com/watch?v=CFF0mV24WCY",
+        "title": "Ti\u00ebsto - Red Lights",
+        "duration": 213,
+        "thumbnail": "https://i.ytimg.com/vi/CFF0mV24WCY/maxresdefault.jpg",
+        "description": "From the new album \"A Town Called Paradise\" available now on iTunes!\nhttp://smarturl.it/TiestoTownParadiseiT\n\nDownload \"Red Lights\" Now:\niTunes: http://smarturl.it/TiestoRed_Lights\nAmazon: http://smarturl.it/TiestoRedLightsAZ\nGoogle Play: http://goo.gl/xs2rQo\n\nMusic video by Ti\u00ebsto performing Red Lights. (C) 2014 Musical Freedom Label Ltd, under exclusive license to PM:AM Recordings, a division of Universal Music BV",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 12,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Red Lights",
+        "artist": "Ti\u00ebsto",
+        "artist_image": "https://i.scdn.co/image/6a550fc493ad8619b00ca5072c889bb4cbc1a5f7",
+        "cover": "https://i.scdn.co/image/f505c34d7e26c2e029a8b0e19fee76a501cc167f",
+        "album": "A Town Called Paradise",
+        "spotify_data": {
+            "id": "5L2l7mI8J1USMzhsmdjat9",
+            "name": "Red Lights",
+            "artists": [
+                {
+                    "id": "2o5jDhtHVPhrJdv3cEQ99Z",
+                    "name": "Ti\u00ebsto",
+                    "images": [
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/c341a6ca0be8c056accaf08aa3b200dadf5ebbd1",
+                            "width": 640
+                        },
+                        {
+                            "height": 320,
+                            "url": "https://i.scdn.co/image/245611e995f5775f389be5e4db9151b1ec810600",
+                            "width": 320
+                        },
+                        {
+                            "height": 160,
+                            "url": "https://i.scdn.co/image/6a550fc493ad8619b00ca5072c889bb4cbc1a5f7",
+                            "width": 160
+                        }
+                    ],
+                    "genres": [
+                        "big room",
+                        "brostep",
+                        "edm",
+                        "electro house",
+                        "house",
+                        "trance",
+                        "tropical house"
+                    ],
+                    "popularity": 82,
+                    "uri": "spotify:artist:2o5jDhtHVPhrJdv3cEQ99Z",
+                    "href": "https://open.spotify.com/artist/2o5jDhtHVPhrJdv3cEQ99Z"
+                }
+            ],
+            "artist": "Ti\u00ebsto",
+            "cover_url": "https://i.scdn.co/image/f505c34d7e26c2e029a8b0e19fee76a501cc167f",
+            "duration": 262.2,
+            "album": {
+                "id": "4SHlBT6B3kL8bdj6X2xHRp",
+                "name": "A Town Called Paradise",
+                "artists": [
+                    {
+                        "id": "2o5jDhtHVPhrJdv3cEQ99Z",
+                        "name": "Ti\u00ebsto",
+                        "images": [
+                            {
+                                "height": 640,
+                                "url": "https://i.scdn.co/image/c341a6ca0be8c056accaf08aa3b200dadf5ebbd1",
+                                "width": 640
+                            },
+                            {
+                                "height": 320,
+                                "url": "https://i.scdn.co/image/245611e995f5775f389be5e4db9151b1ec810600",
+                                "width": 320
+                            },
+                            {
+                                "height": 160,
+                                "url": "https://i.scdn.co/image/6a550fc493ad8619b00ca5072c889bb4cbc1a5f7",
+                                "width": 160
+                            }
+                        ],
+                        "genres": [
+                            "big room",
+                            "brostep",
+                            "edm",
+                            "electro house",
+                            "house",
+                            "trance",
+                            "tropical house"
+                        ],
+                        "popularity": 82,
+                        "uri": "spotify:artist:2o5jDhtHVPhrJdv3cEQ99Z",
+                        "href": "https://open.spotify.com/artist/2o5jDhtHVPhrJdv3cEQ99Z"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/f505c34d7e26c2e029a8b0e19fee76a501cc167f",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/e8e7e59a5c04a7bbd84b1057a2ec058b61bdc59d",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/fd3a0442a8118f330005c103665d68b892736482",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:4SHlBT6B3kL8bdj6X2xHRp"
+            },
+            "popularity": 61,
+            "uri": "spotify:track:5L2l7mI8J1USMzhsmdjat9",
+            "query": "Ti\u00ebsto - Red Lights",
+            "certainty": 0.9444444444444444
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-gv_sXoT3e30-Will_Smith_-_Miami_High_Quality.webm",
+        "video_id": "gv_sXoT3e30",
+        "url": "https://www.youtube.com/watch?v=gv_sXoT3e30",
+        "title": "Will Smith: Miami (High Quality)",
+        "duration": 197,
+        "thumbnail": "https://i.ytimg.com/vi/gv_sXoT3e30/hqdefault.jpg",
+        "description": "Giving you Will Smith's Greatest Hits in High Quality",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 13,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Miami",
+        "artist": "Will Smith",
+        "artist_image": "https://i.scdn.co/image/7783fd3fa8786b8fedee5cb9067ee929bf997eb4",
+        "cover": "https://i.scdn.co/image/b7bec47fbb9ea301d0370d4e10abca574fa40180",
+        "album": "Big Willie Style",
+        "spotify_data": {
+            "id": "6e8Ou0wiqAzIpWb2eSxll8",
+            "name": "Miami",
+            "artists": [
+                {
+                    "id": "41qil2VaGbD194gaEcmmyx",
+                    "name": "Will Smith",
+                    "images": [
+                        {
+                            "height": 1000,
+                            "url": "https://i.scdn.co/image/338040ea81df8012c152cfa65a4c1b440a94a1bc",
+                            "width": 1000
+                        },
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/7783fd3fa8786b8fedee5cb9067ee929bf997eb4",
+                            "width": 640
+                        },
+                        {
+                            "height": 200,
+                            "url": "https://i.scdn.co/image/77e39183f67e558bed90fa0d111552aeffbd6681",
+                            "width": 200
+                        },
+                        {
+                            "height": 64,
+                            "url": "https://i.scdn.co/image/94bb1860877b4328050cf6e0d287cd1a872c588a",
+                            "width": 64
+                        }
+                    ],
+                    "genres": [
+                        "dance pop",
+                        "gangster rap",
+                        "hip hop",
+                        "hip pop",
+                        "pop christmas",
+                        "pop rap",
+                        "rap"
+                    ],
+                    "popularity": 68,
+                    "uri": "spotify:artist:41qil2VaGbD194gaEcmmyx",
+                    "href": "https://open.spotify.com/artist/41qil2VaGbD194gaEcmmyx"
+                }
+            ],
+            "artist": "Will Smith",
+            "cover_url": "https://i.scdn.co/image/b7bec47fbb9ea301d0370d4e10abca574fa40180",
+            "duration": 197.416,
+            "album": {
+                "id": "2esWeP8Ln1sXA0jbDmi3Zq",
+                "name": "Big Willie Style",
+                "artists": [
+                    {
+                        "id": "41qil2VaGbD194gaEcmmyx",
+                        "name": "Will Smith",
+                        "images": [
+                            {
+                                "height": 1000,
+                                "url": "https://i.scdn.co/image/338040ea81df8012c152cfa65a4c1b440a94a1bc",
+                                "width": 1000
+                            },
+                            {
+                                "height": 640,
+                                "url": "https://i.scdn.co/image/7783fd3fa8786b8fedee5cb9067ee929bf997eb4",
+                                "width": 640
+                            },
+                            {
+                                "height": 200,
+                                "url": "https://i.scdn.co/image/77e39183f67e558bed90fa0d111552aeffbd6681",
+                                "width": 200
+                            },
+                            {
+                                "height": 64,
+                                "url": "https://i.scdn.co/image/94bb1860877b4328050cf6e0d287cd1a872c588a",
+                                "width": 64
+                            }
+                        ],
+                        "genres": [
+                            "dance pop",
+                            "gangster rap",
+                            "hip hop",
+                            "hip pop",
+                            "pop christmas",
+                            "pop rap",
+                            "rap"
+                        ],
+                        "popularity": 68,
+                        "uri": "spotify:artist:41qil2VaGbD194gaEcmmyx",
+                        "href": "https://open.spotify.com/artist/41qil2VaGbD194gaEcmmyx"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/b7bec47fbb9ea301d0370d4e10abca574fa40180",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/3ed245e26fd3e22cc4f26b5b4206c20d512e791d",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/1f4057dcbce8adf58cbbc1aafa05b293675b9809",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:2esWeP8Ln1sXA0jbDmi3Zq"
+            },
+            "popularity": 70,
+            "uri": "spotify:track:6e8Ou0wiqAzIpWb2eSxll8",
+            "query": "Will Smith - Miami",
+            "certainty": 0.9411764705882353
+        }
+    },
+    {
+        "version": 103,
+        "type": "SpotifyEntry",
+        "expected_filename": "cache/audio_cache/youtube-7BPZoAspZhE-YG_-_Pop_It_Shake_It_ft._DJ_Mustard.webm",
+        "video_id": "7BPZoAspZhE",
+        "url": "https://www.youtube.com/watch?v=7BPZoAspZhE",
+        "title": "YG - Pop It, Shake It ft. DJ Mustard",
+        "duration": 242,
+        "thumbnail": "https://i.ytimg.com/vi/7BPZoAspZhE/maxresdefault.jpg",
+        "description": "Stream YG\u2019s \u201cPop It, Shake It\u201d:\nAll Partners: http://smarturl.it/PopItShakeIt\nStreaming Retail: http://smarturl.it/rPopItShakeIt\nDownload/Device Aware: http://smarturl.it/dPopItShakeIt\n\niTunes: http://smarturl.it/iPopItShakeIt\nGoogle Play: http://smarturl.it/gPopItShakeIt\nAmazon: http://smarturl.it/aPopItShakeIt\n\nStream on:\nSpotify: http://smarturl.it/sPopItShakeIt\nApple Music: http://smarturl.it/amPopItShakeIt\nGoogle Play: http://smarturl.it/gPopItShakeIt\nTidal: http://smarturl.it/tPopItShakeIt\nSoundcloud: http://smarturl.it/scPopItShakeIt\n\nMore From YG:\nhttp://4hunnid.com\nhttp://twitter.com/YG\nhttp://instagram.com/YG\nhttp://facebook.com/YG400\n\nMusic video by YG performing Pop It, Shake It. (C) 2017 Def Jam Recordings, a division of UMG Recordings, Inc.\n\nhttp://vevo.ly/1BQADU",
+        "meta": {
+            "author": {
+                "type": "Member",
+                "id": "243902693666455553",
+                "name": ".vlexar"
+            },
+            "playlist": {
+                "type": "built-in/dict",
+                "value": {
+                    "cover": "http://i.imgur.com/8e8eaoU.jpg",
+                    "name": "playlist2",
+                    "index": 14,
+                    "timestamp": 1502384818
+                }
+            }
+        },
+        "song_title": "Pop It, Shake It",
+        "artist": "YG & DJ Mustard",
+        "artist_image": "https://i.scdn.co/image/a1a98585d38da291dc5e28eb01163abc18aaa379",
+        "cover": "https://i.scdn.co/image/2df4aceeead69864ab6992f52a19baadd2aab8fd",
+        "album": "Pop It, Shake It",
+        "spotify_data": {
+            "id": "7kGOXJNLRBJ8WfIAYnFxfu",
+            "name": "Pop It, Shake It",
+            "artists": [
+                {
+                    "id": "0A0FS04o6zMoto8OKPsDwY",
+                    "name": "YG",
+                    "images": [
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/c000cfbb8c765b12ffc257a214eda2919998a3ad",
+                            "width": 640
+                        },
+                        {
+                            "height": 320,
+                            "url": "https://i.scdn.co/image/a1a98585d38da291dc5e28eb01163abc18aaa379",
+                            "width": 320
+                        },
+                        {
+                            "height": 160,
+                            "url": "https://i.scdn.co/image/a277fd0a12ec31a5f019b80d6b4abda2520bbd89",
+                            "width": 160
+                        }
+                    ],
+                    "genres": [
+                        "dwn trap",
+                        "gangster rap",
+                        "hip hop",
+                        "pop rap",
+                        "rap",
+                        "southern hip hop",
+                        "trap music"
+                    ],
+                    "popularity": 81,
+                    "uri": "spotify:artist:0A0FS04o6zMoto8OKPsDwY",
+                    "href": "https://open.spotify.com/artist/0A0FS04o6zMoto8OKPsDwY"
+                },
+                {
+                    "id": "0YinUQ50QDB7ZxSCLyQ40k",
+                    "name": "DJ Mustard",
+                    "images": [
+                        {
+                            "height": 1000,
+                            "url": "https://i.scdn.co/image/55dc865bfcba89250b0ffc61c29ae9725c81653e",
+                            "width": 1000
+                        },
+                        {
+                            "height": 640,
+                            "url": "https://i.scdn.co/image/52cb8f8b27505ac77f28275396d7e57f0e48f7e4",
+                            "width": 640
+                        },
+                        {
+                            "height": 200,
+                            "url": "https://i.scdn.co/image/b3f0dccc4f5bdd830f98a211190362ff9f4e0b68",
+                            "width": 200
+                        },
+                        {
+                            "height": 64,
+                            "url": "https://i.scdn.co/image/317b2dabdb8c7910b90378ab4fa8f6c0dae1e9a8",
+                            "width": 64
+                        }
+                    ],
+                    "genres": [
+                        "dwn trap",
+                        "hip hop",
+                        "pop rap",
+                        "rap",
+                        "southern hip hop",
+                        "trap music"
+                    ],
+                    "popularity": 75,
+                    "uri": "spotify:artist:0YinUQ50QDB7ZxSCLyQ40k",
+                    "href": "https://open.spotify.com/artist/0YinUQ50QDB7ZxSCLyQ40k"
+                }
+            ],
+            "artist": "YG & DJ Mustard",
+            "cover_url": "https://i.scdn.co/image/2df4aceeead69864ab6992f52a19baadd2aab8fd",
+            "duration": 223.28,
+            "album": {
+                "id": "3Vew7k85pf0RaHQsulSgWe",
+                "name": "Pop It, Shake It",
+                "artists": [
+                    {
+                        "id": "0A0FS04o6zMoto8OKPsDwY",
+                        "name": "YG",
+                        "images": [
+                            {
+                                "height": 640,
+                                "url": "https://i.scdn.co/image/c000cfbb8c765b12ffc257a214eda2919998a3ad",
+                                "width": 640
+                            },
+                            {
+                                "height": 320,
+                                "url": "https://i.scdn.co/image/a1a98585d38da291dc5e28eb01163abc18aaa379",
+                                "width": 320
+                            },
+                            {
+                                "height": 160,
+                                "url": "https://i.scdn.co/image/a277fd0a12ec31a5f019b80d6b4abda2520bbd89",
+                                "width": 160
+                            }
+                        ],
+                        "genres": [
+                            "dwn trap",
+                            "gangster rap",
+                            "hip hop",
+                            "pop rap",
+                            "rap",
+                            "southern hip hop",
+                            "trap music"
+                        ],
+                        "popularity": 81,
+                        "uri": "spotify:artist:0A0FS04o6zMoto8OKPsDwY",
+                        "href": "https://open.spotify.com/artist/0A0FS04o6zMoto8OKPsDwY"
+                    }
+                ],
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/2df4aceeead69864ab6992f52a19baadd2aab8fd",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/c1c977009a6084aa0704dd2b7b65e3187c5ded70",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/579e0dff09f22cf07cc2f084325851f664660ea1",
+                        "width": 64
+                    }
+                ],
+                "uri": "spotify:album:3Vew7k85pf0RaHQsulSgWe"
+            },
+            "popularity": 59,
+            "uri": "spotify:track:7kGOXJNLRBJ8WfIAYnFxfu",
+            "query": "Yg - Pop It, Shake It Dj Mustard",
+            "certainty": 0.7450980392156863
+        }
+    }
+]

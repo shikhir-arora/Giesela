@@ -1,129 +1,130 @@
 {
-    "simonisanerd": {
-        "location": "data/playlists/simonisanerd.gpl",
+    "playlist2": {
+        "location": "data/playlists/playlist2.gpl",
         "author": {
-            "id": "203302899277627392",
-            "name": "siku2",
-            "display_name": "Simon",
-            "avatar_url": "https://cdn.discordapp.com/avatars/203302899277627392/520da4f3e1a7ac618955079cb8082013.png?size=1024",
-            "colour": "#1197F0"
+            "id": "243902693666455553",
+            "name": ".vlexar",
+            "display_name": ".vlexar",
+            "avatar_url": "https://cdn.discordapp.com/avatars/243902693666455553/a_cebbdb35ed8a865f5c6a1cd193f8a4aa.gif?size=1024",
+            "colour": "#DB504A"
         },
-        "entries": 116,
-        "replays": 88,
-        "description": "Your go-to playlist for everything related to Anime and Japanese music. This is the first (and as of yet) only playlist where **every** entry is a GieselaEntry.",
-        "cover_url": "http://i.imgur.com/MFXq8og.jpg",
-        "name": "Simonisanerd"
+        "entries": 14,
+        "replays": 38,
+        "description": "FIrst Playlist",
+        "cover_url": "http://i.imgur.com/8e8eaoU.jpg"
     },
-    "quality": {
-        "location": "data/playlists/quality.gpl",
+    "kerser1": {
+        "location": "data/playlists/kerser1.gpl",
         "author": {
-            "id": "203510202421477376",
-            "name": "ZyLect",
-            "display_name": "ZyLect",
-            "avatar_url": "https://cdn.discordapp.com/avatars/203510202421477376/8e135d666d1f7f6769530dbfab8298dd.png?size=1024",
-            "colour": "#6200F6"
+            "id": "243902693666455553",
+            "name": ".vlexar",
+            "display_name": ".vlexar",
+            "avatar_url": "https://cdn.discordapp.com/avatars/243902693666455553/a_cebbdb35ed8a865f5c6a1cd193f8a4aa.gif?size=1024",
+            "colour": "#DB504A"
         },
-        "entries": 142,
-        "replays": 54,
-        "description": "Hand-picked songs to please your ears. This playlist suits you well if you want to relax while drinking some coffee.",
-        "cover_url": "http://i.imgur.com/Vifn0MV.jpg",
-        "name": "Quality"
+        "replays": 14,
+        "entries": 25,
+        "description": "Songs by The Kers",
+        "cover_url": "http://i.imgur.com/Rx0f1r8.jpg",
+        "name": "Kerser1"
     },
-    "uptoyou": {
-        "location": "data/playlists/uptoyou.gpl",
+    "lucadj1": {
+        "location": "data/playlists/lucadj1.gpl",
         "author": {
-            "id": "unknown",
-            "name": "unknown",
-            "display_name": "Unknown",
-            "avatar_url": "https://amploprod.s3.amazonaws.com/assets/no-user-image-square-9f6a473a32ad639f619216331d10d61ce1b35c9271d5683920960e1a5ee45bb8.jpg",
-            "colour": "#1197F0"
+            "id": "243902693666455553",
+            "name": ".vlexar",
+            "display_name": ".vlexar",
+            "avatar_url": "https://cdn.discordapp.com/avatars/243902693666455553/a_cebbdb35ed8a865f5c6a1cd193f8a4aa.gif?size=1024",
+            "colour": "#DB504A"
         },
-        "replays": 2,
-        "description": null,
-        "cover_url": "http://i.imgur.com/BP3XWrf.jpg"
+        "entries": 9,
+        "replays": 28,
+        "description": "Luca dot DJ - Compilation",
+        "cover_url": "https://i.imgur.com/pA81zyq.jpg",
+        "name": "lucadj1"
     },
-    "gems": {
-        "location": "data/playlists/gems.gpl",
+    "playlist4": {
+        "location": "data/playlists/playlist4.gpl",
         "author": {
-            "id": "206459363739566080",
-            "name": "Lophorius",
-            "display_name": "Lophorius",
-            "avatar_url": "https://cdn.discordapp.com/avatars/206459363739566080/290bbea2374aba7ce2c28ced4842c643.png?size=1024",
-            "colour": "#1197F0"
+            "id": "243902693666455553",
+            "name": ".vlexar",
+            "display_name": ".vlexar",
+            "avatar_url": "https://cdn.discordapp.com/avatars/243902693666455553/a_cebbdb35ed8a865f5c6a1cd193f8a4aa.gif?size=1024",
+            "colour": "#DB504A"
         },
-        "replays": 19,
-        "description": null,
-        "cover_url": "https://i.imgur.com/CKhYHbF.jpg",
-        "name": "Gems"
+        "replays": 3,
+        "entries": 211,
+        "description": "Mega Playlist - 1",
+        "cover_url": "http://i.imgur.com/U1qUSme.png"
     },
-    "classical": {
-        "location": "data/playlists/classical.gpl",
+    "mega1": {
+        "location": "data/playlists/mega1.gpl",
         "author": {
-            "id": "206459363739566080",
-            "name": "Lophorius",
-            "display_name": "Lophorius",
-            "avatar_url": "https://cdn.discordapp.com/avatars/206459363739566080/290bbea2374aba7ce2c28ced4842c643.png?size=1024",
-            "colour": "#1197F0"
+            "id": "243902693666455553",
+            "name": ".vlexar",
+            "display_name": ".vlexar",
+            "avatar_url": "https://cdn.discordapp.com/avatars/243902693666455553/a_cebbdb35ed8a865f5c6a1cd193f8a4aa.gif?size=1024",
+            "colour": "#DB504A"
+        },
+        "replays": 3,
+        "description": "vlex - massive playlist collection of 1-4",
+        "cover_url": "http://i.imgur.com/NnZ09P0.png",
+        "name": "Mega1"
+    },
+    "testcunt": {
+        "location": "data/playlists/testcunt.gpl",
+        "author": {
+            "id": "159148610754314241",
+            "name": "kerser",
+            "display_name": "kerser",
+            "avatar_url": "https://cdn.discordapp.com/avatars/159148610754314241/a_1bac5cbb075226034e0df4c27881c64d.gif?size=1024",
+            "colour": "#2E3136"
         },
         "replays": 4,
-        "description": "Containing music that justifies why aliens should visit us and benefit from us.",
-        "cover_url": "http://i.imgur.com/wljtuBA.png",
-        "name": "Classical"
+        "description": "kerser is a sickcunt",
+        "cover_url": "http://i.imgur.com/utHZvlB.jpg",
+        "name": "Testcunt"
     },
-    "420": {
-        "location": "data/playlists/420.gpl",
+    "qualityxd": {
+        "location": "data/playlists/qualityxd.gpl",
         "author": {
-            "id": "210488226777923585",
-            "name": "grelor",
-            "display_name": "grelor",
-            "avatar_url": "",
-            "colour": "#57D31D"
+            "id": "243902693666455553",
+            "name": ".vlexar",
+            "display_name": ".vlexar",
+            "avatar_url": "https://cdn.discordapp.com/avatars/243902693666455553/a_cebbdb35ed8a865f5c6a1cd193f8a4aa.gif?size=1024",
+            "colour": "#B485FA"
         },
-        "replays": 9,
-        "description": null,
-        "cover_url": "https://i.imgur.com/XnyMP91.jpg",
-        "name": "420"
+        "replays": 6,
+        "description": "Quality import from Spotify xD",
+        "cover_url": "http://i.imgur.com/WTC8e4T.jpg",
+        "name": "Qualityxd"
     },
-    "workout": {
-        "location": "data/playlists/workout.gpl",
+    "autopl1": {
+        "location": "data/playlists/autopl1.gpl",
         "author": {
-            "id": "206459363739566080",
-            "name": "Lophorius",
-            "display_name": "Lophorius",
-            "avatar_url": "https://cdn.discordapp.com/avatars/206459363739566080/052ae2a51be094c5976d491577320512.png?size=1024",
-            "colour": "#FFB400"
-        },
-        "replays": 0,
-        "description": "Unleash your inner beast",
-        "cover_url": "https://i.imgur.com/hHutGfl.jpg",
-        "name": "Workout"
-    },
-    "electronica": {
-        "location": "data/playlists/electronica.gpl",
-        "author": {
-            "id": "203302899277627392",
-            "name": "siku2",
-            "display_name": "Spookumon",
-            "avatar_url": "https://cdn.discordapp.com/avatars/203302899277627392/a_92ebd93e871089ddc512fca3baed6b6b.gif?size=1024",
-            "colour": "#4F00C0"
+            "id": "243902693666455553",
+            "name": ".vlexar",
+            "display_name": ".vlexar",
+            "avatar_url": "https://cdn.discordapp.com/avatars/243902693666455553/a_cebbdb35ed8a865f5c6a1cd193f8a4aa.gif?size=1024",
+            "colour": "#B485FA"
         },
         "replays": 0,
-        "description": "Music?",
-        "cover_url": "https://i.imgur.com/bjEnvnN.png",
-        "name": "Electronica"
+        "description": "built by the power of",
+        "cover_url": "http://i.imgur.com/fmC8Eks.jpg",
+        "name": "Autopl1"
     },
-    "jams": {
-        "location": "data/playlists/jams.gpl",
+    "miniplaylist1": {
+        "location": "data/playlists/miniplaylist1.gpl",
         "author": {
-            "id": "203302899277627392",
-            "name": "siku2",
-            "display_name": "Simon",
-            "avatar_url": "https://cdn.discordapp.com/avatars/203302899277627392/a_e60cca01a5d0e8cb841aa0bc6888bf8e.gif?size=1024",
-            "colour": "#4F00C0"
+            "id": "243902693666455553",
+            "name": ".vlexar",
+            "display_name": ".vlexar",
+            "avatar_url": "https://cdn.discordapp.com/avatars/243902693666455553/a_052b7f1160404266590337b978cad7ca.gif?size=1024",
+            "colour": "#1ABC9C"
         },
-        "replays": 2,
-        "description": "Ever get the feeling that some modern pop songs aren't all that bad?\nWell, fear not! This playlist is gonna help you answer this question.",
-        "cover_url": "https://i.imgur.com/gwwzsof.png",
-        "name": "Jams"
+        "replays": 0,
+        "description": "best ever xD",
+        "cover_url": "https://i.imgur.com/k0fnEHp.jpg",
+        "name": "Miniplaylist1"
     }
 }
