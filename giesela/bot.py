@@ -9,7 +9,7 @@ import aiohttp
 import discord
 
 from giesela.config import Config
-from giesela.lib import module
+from giesela.lib import module, reference
 from giesela.models import exceptions, signals
 from giesela.utils import localisation
 from giesela.utils.opus_loader import load_opus_lib
@@ -24,6 +24,8 @@ class Giesela(discord.Client):
     def __init__(self):
         """Initialise."""
         super().__init__()
+
+        reference.BotReference.bot = self
 
         self.config = Config.load()
         self.modules = []
@@ -57,11 +59,53 @@ class Giesela(discord.Client):
 
         log.info("loaded {}/{} modules".format(len(self.modules), len(ext_classes)))
 
+    def _cleanup(self):
+        try:
+            self.loop.run_until_complete(self.logout())
+        except Exception:  # Can be ignored
+            pass
+
+        pending = asyncio.Task.all_tasks()
+        gathered = asyncio.gather(*pending)
+
+        try:
+            gathered.cancel()
+            self.loop.run_until_complete(gathered)
+            gathered.exception()
+        except Exception:  # Can be ignored
+            pass
+
+    def run(self):
+        """Start 'er up."""
+        try:
+            self.config.check()
+        except exceptions.ConfigKeysMissing as e:
+            log.error(localisation.format(None, "exceptions.config.missing_keys", " ,".join(e.missing)))
+            raise signals.StopSignal
+
+        if not self.config.token:
+            log.error(localisation.get(None, "exceptions.token.none"))
+            raise signals.StopSignal
+
+        try:
+            self.loop.run_until_complete(self.start(self.config.token))
+        except discord.errors.LoginFailure:
+            log.error(localisation.get(None, "exceptions.token.invalid"))
+
+        finally:
+            try:
+                self._cleanup()
+            except Exception as e:
+                log.exception("Error in cleanup:")
+
+            self.loop.close()
+            raise signals.StopSignal
+
     def _emitted(self, future):
         exc = future.exception()
 
         if exc:
-            log.error("Exception in {}:\n{}".format(future, traceback.format_exception(None, exc, None)))
+            log.error("Exception in {}:\n{}".format(future, "".join(traceback.format_exception(None, exc, None))))
 
     async def emit(self, event, *args, **kwargs):
         """Call a function in all extensions."""
@@ -151,45 +195,3 @@ class Giesela(discord.Client):
     async def on_typing(self, channel, user, when):
         """Call when user starts typing."""
         await self.emit("on_typing", channel, user, when)
-
-    def _cleanup(self):
-        try:
-            self.loop.run_until_complete(self.logout())
-        except Exception:  # Can be ignored
-            pass
-
-        pending = asyncio.Task.all_tasks()
-        gathered = asyncio.gather(*pending)
-
-        try:
-            gathered.cancel()
-            self.loop.run_until_complete(gathered)
-            gathered.exception()
-        except Exception:  # Can be ignored
-            pass
-
-    def run(self):
-        """Start 'er up."""
-        try:
-            self.config.check()
-        except exceptions.ConfigKeysMissing as e:
-            log.error(localisation.format(None, "exceptions.config.missing_keys", " ,".join(e.missing)))
-            raise signals.StopSignal
-
-        if not self.config.token:
-            log.error(localisation.get(None, "exceptions.token.none"))
-            raise signals.StopSignal
-
-        try:
-            self.loop.run_until_complete(self.start(self.config.token))
-        except discord.errors.LoginFailure:
-            log.error(localisation.get(None, "exceptions.token.invalid"))
-
-        finally:
-            try:
-                self._cleanup()
-            except Exception as e:
-                log.exception("Error in cleanup:")
-
-            self.loop.close()
-            raise signals.StopSignal

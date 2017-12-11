@@ -1,88 +1,86 @@
-import asyncio
+"""The top level module for the playlist system."""
+
 import json
+import logging
 import os
+import random
+import string
 
-from giesela.config import static_config
-from giesela.entry import Entry
-from giesela.lib.serialisable import (AsyncSerialisable, Serialisable,
-                                      WebSerialisable)
-from giesela.web_author import WebAuthor
+from giesela.models.playlist import Playlist, PlaylistEntry
 
-
-class PlaylistStats(Serialisable, WebSerialisable):
-
-    def __init__(self, loaded):
-        self.loaded = loaded
+log = logging.getLogger(__name__)
 
 
-class Playlist(Serialisable, WebSerialisable):
-
-    def __init__(self, _id, name, description, cover, author, serialised_entries, stats):
-        self.id = _id
-        self.name = name
-        self.description = description
-        self.cover = cover
-        self.author = author
-        self.serialised_entries = serialised_entries
-        self.stats = stats
-
-        self._dirty = True
-        self._serialised_data = None
-
-    @classmethod
-    def from_dict(cls, data):
-        kwargs = data
-
-        kwargs["author"] = WebAuthor.from_dict(data["author"]).discord_user
-        kwargs["stats"] = PlaylistStats.from_dict(data["stats"])
-
-        return cls(**kwargs)
-
-    def get_entries(self, queue):
-        return [Entry.from_dict(queue, serialised_entry) for serialised_entry in self.serialised_entries]
-
-    async def generate_cover(self):
-        pass
-
-    def to_dict(self):
-        if self._dirty or self._serialised_data is None:
-            self._serialised_data = {
-                "id":                   self.id,
-                "name":                 self.name,
-                "description":          self.description,
-                "cover":                self.cover,
-                "author":               WebAuthor.from_user(self.author).to_dict(),
-                "serialised_entries":   self.serialised_entries,
-                "stats":                self.stats.to_dict()
-            }
-
-            self._dirty = False
-
-        return self._serialised_data
-
-    def to_web_dict(self):
-        pass
-
-
-class Playlists:
-    playlist_path = os.path.join(os.getcwd(), static_config.playlists_location)
+def _load_playlists(path):
     playlists = []
 
-    @staticmethod
-    def load():
-        if not os.path.isdir(Playlists.playlist_path):
-            os.mkdir(Playlists.playlist_path)
+    for f_name in os.listdir(path):
+        if not f_name.endswith(".gpl"):
+            continue
 
-        playlist_files = [os.path.join(Playlists.playlist_path, path) for path in os.listdir(Playlists.playlist_path)]
+        loc = os.path.join(path, f_name)
 
-        for playlist_file in playlist_files:
-            try:
-                with open(playlist_file, "r") as f:
-                    data = json.load(f)
-                    Playlists.playlists.append(Playlist.from_dict(data))
-            except OSError:
-                print("[Playlists] Couldn't open:", playlist_file)
-            except json.JSONDecodeError:
-                print("[Playlists] Couldn't decode:", playlist_file)
-            except KeyError:
-                print("[Playlist] Wrong format", playlist_file)
+        with open(loc, "r") as f:
+            pl = json.load(f)
+
+        playlists.append(pl)
+
+    return playlists
+
+
+def _unique_id(length, existing_ids, *, custom_population=None):
+    population = custom_population or string.hexdigits
+    while True:
+        tid = random.choices(population, k=length)
+
+        if tid not in existing_ids:
+            return tid
+
+
+class PlaylistManager:
+    """Manager."""
+
+    def __init__(self, bot):
+        """Initialise the playlist manager."""
+        self.bot = bot
+        self.loop = bot.loop
+
+        self.playlists = None
+
+        Playlist.manager = self
+        PlaylistEntry.manager = self
+
+        log.debug("playlist manager initialised.")
+
+    def __str__(self):
+        """Return string rep."""
+        return "<PlaylistManager with {} playlist(s)>".format(len(self.playlists))
+
+    def __getitem__(self, index):
+        """Return playlist by id."""
+        return next(playlist for playlist in self.playlists if playlist.gpl_id == index)
+
+    async def setup(self):
+        """Sets-up the manager.
+
+        Loads the existing playlists from disk.
+        """
+        log.info("setting up playlist manager")
+        log.debug("loading playlists")
+        raw_pls = await self.loop.run_in_executor(None, _load_playlists, "data/playlists")
+        log.debug("found {} raw playlists".format(len(raw_pls)))
+
+        playlists = []
+
+        for raw_pl in raw_pls:
+            pl = Playlist.from_dict(raw_pl)
+            playlists.append(pl)
+            log.debug("loaded {}".format(pl))
+
+        self.playlists = playlists
+        log.info("playlist manager ready!")
+
+    def get(*, name=None, gpl_id=None):
+        """Search for a playlist by its name or by its id."""
+        if not any(name, gpl_id):
+            raise ValueError("Please provide a search criteria")

@@ -1,12 +1,13 @@
 """More functionality."""
 
+from giesela.lib.reference import BotReference
 
-class GieselaUser:
+
+class GieselaUser(BotReference):
     """A Giesela user."""
 
     __slots__ = ["discord_id", "name", "discriminator", "avatar_url", "server", "server_id", "server_name", "member"]
 
-    bot = None
     users = {}
 
     def __init__(self, discord_id, discriminator, name, avatar_url, server, server_id, server_name, member):
