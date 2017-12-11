@@ -21,6 +21,5 @@ class FileLocations:
     LOCALISATION = "config/locale.json"
     LOCALE_FOLDER = "locale"
 
-    CACHE_FOLDER = "data/cache"
-
-    EXPIRED_TOKENS = CACHE_FOLDER + "/expired_tokens.txt"
+    TOKENS = "data/webiesela_tokens.json"
+    EXPIRED_TOKENS = "data/cache/expired_tokens.txt"
