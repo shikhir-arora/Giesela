@@ -8,6 +8,10 @@ from collections import defaultdict
 import aiohttp
 import discord
 
+from giesela.config import Config
+from giesela.lib import module
+from giesela.models import exceptions, signals
+from giesela.utils import localisation
 from giesela.utils.opus_loader import load_opus_lib
 
 load_opus_lib()
@@ -21,11 +25,37 @@ class Giesela(discord.Client):
         """Initialise."""
         super().__init__()
 
+        self.config = Config.load()
         self.modules = []
 
         self.locks = defaultdict(asyncio.Lock)
-
         self.aiosession = aiohttp.ClientSession(loop=self.loop)
+
+        self.load_modules()
+
+    def load_modules(self):
+        """Load all modules."""
+        from . import modules  # noqa: F401
+
+        ext_classes = module.GieselaModule.modules
+
+        self.modules = []
+
+        log.debug("loading {} modules".format(len(ext_classes)))
+
+        for ext_cls in ext_classes:
+            try:
+                m = ext_cls(self)
+                log.debug("created module {}".format(m))
+
+                m.on_load()
+                log.debug("initialised module {}".format(m))
+
+                self.modules.append(m)
+            except Exception:
+                log.error("{}\nCouldn't load extension {}!".format(traceback.format_exc(), ext_cls))
+
+        log.info("loaded {}/{} modules".format(len(self.modules), len(ext_classes)))
 
     def _emitted(self, future):
         exc = future.exception()
@@ -35,8 +65,8 @@ class Giesela(discord.Client):
 
     async def emit(self, event, *args, **kwargs):
         """Call a function in all extensions."""
-        for module in self.modules:
-            task = self.loop.create_task(getattr(module, event)(*args, **kwargs))
+        for m in self.modules:
+            task = self.loop.create_task(getattr(m, event)(*args, **kwargs))
             task.add_done_callback(self._emitted)
 
     async def on_ready(self):
@@ -122,24 +152,44 @@ class Giesela(discord.Client):
         """Call when user starts typing."""
         await self.emit("on_typing", channel, user, when)
 
+    def _cleanup(self):
+        try:
+            self.loop.run_until_complete(self.logout())
+        except Exception:  # Can be ignored
+            pass
+
+        pending = asyncio.Task.all_tasks()
+        gathered = asyncio.gather(*pending)
+
+        try:
+            gathered.cancel()
+            self.loop.run_until_complete(gathered)
+            gathered.exception()
+        except Exception:  # Can be ignored
+            pass
+
     def run(self):
         """Start 'er up."""
         try:
-            self.loop.run_until_complete(self.start(*self.config.auth))
+            self.config.check()
+        except exceptions.ConfigKeysMissing as e:
+            log.error(localisation.format(None, "exceptions.config.missing_keys", " ,".join(e.missing)))
+            raise signals.StopSignal
 
+        if not self.config.token:
+            log.error(localisation.get(None, "exceptions.token.none"))
+            raise signals.StopSignal
+
+        try:
+            self.loop.run_until_complete(self.start(self.config.token))
         except discord.errors.LoginFailure:
-            # TODO
-            raise Exception(
-                "Bot cannot login, bad credentials.",
-                "Fix your Email or Password or Token in the options file.  "
-                "Remember that each field should be on their own line.")
+            log.error(localisation.get(None, "exceptions.token.invalid"))
 
         finally:
             try:
                 self._cleanup()
             except Exception as e:
-                print("Error in cleanup:", e)
+                log.exception("Error in cleanup:")
 
             self.loop.close()
-            if self.exit_signal:
-                raise self.exit_signal
+            raise signals.StopSignal
