@@ -9,4 +9,4 @@ class HelloWorld(GieselaModule):
     @command(r"^hello\b")
     async def hello(self, channel):
         """Hello world."""
-        await self.bot.send_message(channel, "world!")
+        await channel.send("world!")
