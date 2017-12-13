@@ -18,7 +18,7 @@ locales = {}
 
 
 class Settings:
-    """Makes it possible to change the language per server."""
+    """Makes it possible to change the language per guild."""
 
     client_language = FALLBACK_LANGUAGE
     languages = {}
@@ -191,7 +191,7 @@ _fallback = Locale(FALLBACK_LANGUAGE)
 
 
 def get_locale(lang, use_fallback=True):
-    """Get a locale object either by the language's name or a server."""
+    """Get a locale object either by the language's name or a guild."""
     global locales
 
     lang = Settings.get_language(lang)

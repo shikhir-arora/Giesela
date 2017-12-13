@@ -160,25 +160,25 @@ class Giesela(discord.Client):
         """Call when member updated."""
         await self.emit("on_member_update", before, after)
 
-    async def on_server_join(self, server):
-        """Call after joining a server."""
-        await self.emit("on_server_join", server)
+    async def on_guild_join(self, guild):
+        """Call after joining a guild."""
+        await self.emit("on_guild_join", guild)
 
-    async def on_server_update(self, before, after):
-        """Call when server updated."""
-        await self.emit("on_server_update", before, after)
+    async def on_guild_update(self, before, after):
+        """Call when guild updated."""
+        await self.emit("on_guild_update", before, after)
 
-    async def on_server_role_create(self, server, role):
+    async def on_guild_role_create(self, guild, role):
         """Call when role created."""
-        await self.emit("on_server_role_create", server, role)
+        await self.emit("on_guild_role_create", guild, role)
 
-    async def on_server_role_delete(self, server, role):
+    async def on_guild_role_delete(self, guild, role):
         """Call when role deleted."""
-        await self.emit("on_server_role_delete", server, role)
+        await self.emit("on_guild_role_delete", guild, role)
 
-    async def on_server_role_update(self, server, role):
+    async def on_guild_role_update(self, guild, role):
         """Call when role updated."""
-        await self.emit("on_server_role_update", server, role)
+        await self.emit("on_guild_role_update", guild, role)
 
     async def on_voice_state_update(self, before, after):
         """Call when voice state updated."""

@@ -34,8 +34,8 @@ def command(match=None):
                 if params.pop("message", False):
                     kwargs["message"] = message
 
-                if params.pop("server", False):
-                    kwargs["server"] = message.server
+                if params.pop("guild", False):
+                    kwargs["guild"] = message.guild
 
                 if params.pop("channel", False):
                     kwargs["channel"] = message.channel
@@ -58,14 +58,15 @@ def command(match=None):
                     raise MissingParamsError(params.keys())
 
                 try:
-                    return await func(**kwargs)
+                    res = await func(**kwargs)
+                    return res or True
                 except AssertionError as e:
                     if e.args and isinstance(e.args[0], ParamError):
                         raise e.args[0]
 
                     raise e
             else:
-                return
+                return False
 
         setattr(wrapper, "_is_command", True)
 
@@ -111,7 +112,9 @@ class GieselaModule(metaclass=GieselaModuleMount):
     async def _on_message(self, message):
         for name, func in self.commands.items():
             try:
-                await func(message)
+                res = await func(message)
+                if res:
+                    log.debug("{} triggered <{}>: \"{}\"".format(message.author, name, message.content))
             except GieselaException as e:
                 # TODO
                 raise
@@ -168,23 +171,23 @@ class GieselaModule(metaclass=GieselaModuleMount):
         """Call when member updated."""
         pass
 
-    async def on_server_join(self, server):
-        """Call after joining a server."""
+    async def on_guild_join(self, guild):
+        """Call after joining a guild."""
         pass
 
-    async def on_server_update(self, before, after):
-        """Call when server updated."""
+    async def on_guild_update(self, before, after):
+        """Call when guild updated."""
         pass
 
-    async def on_server_role_create(self, server, role):
+    async def on_guild_role_create(self, guild, role):
         """Call when role created."""
         pass
 
-    async def on_server_role_delete(self, server, role):
+    async def on_guild_role_delete(self, guild, role):
         """Call when role deleted."""
         pass
 
-    async def on_server_role_update(self, server, role):
+    async def on_guild_role_update(self, guild, role):
         """Call when role updated."""
         pass
 

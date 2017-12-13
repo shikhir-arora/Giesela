@@ -5,17 +5,17 @@
   "description": "It's really good, trust me",
   "cover": "https://blog.xenproject.org/wp-content/uploads/2014/10/Testing.jpg",
   "creator": {
-    "id": "203302899277627392",
-    "server": {
-      "id": "203304535949574154"
+    "id": 203302899277627392,
+    "guild": {
+      "id": 203304535949574154
     }
   },
   "changelog": [
     {
       "user": {
-        "id": "203302899277627392",
-        "server": {
-          "id": "203304535949574154"
+        "id": 203302899277627392,
+        "guild": {
+          "id": 203304535949574154
         }
       },
       "change": {

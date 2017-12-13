@@ -20,8 +20,12 @@ def _load_playlists(path):
 
         loc = os.path.join(path, f_name)
 
-        with open(loc, "r") as f:
-            pl = json.load(f)
+        try:
+            with open(loc, "r") as f:
+                pl = json.load(f)
+        except json.JSONDecodeError:
+            log.error("Couldn't load playlist {}".format(f_name))
+            continue
 
         playlists.append(pl)
 
