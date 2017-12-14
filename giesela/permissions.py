@@ -12,13 +12,13 @@ log = logging.getLogger(__name__)
 class PermissionManager(BotReference):
     """Permission managment."""
 
-    __slots__ = ["servers"]
+    __slots__ = ["guilds"]
 
-    def __init__(self, servers):
+    def __init__(self, guilds):
         """Init."""
         self.loop = bot.loop  # noqa: F821
 
-        self.servers = servers
+        self.guilds = guilds
 
         log.info("the flawless permission system is all set!")
 
@@ -35,7 +35,7 @@ class PermissionManager(BotReference):
     def _save(self):
         """Save permissions sync."""
         log.debug("saving permissions")
-        data = [server.to_dict() for server in self.servers]
+        data = [guild.to_dict() for guild in self.guilds]
 
         with open(FileLocations.PERMISSIONS, "w+") as f:
             json.dump(data, f)

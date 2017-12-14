@@ -2,7 +2,7 @@
 
 
 class Permissions:
-    """Yaaay."""
+    """Yaaay I really suck at writing these."""
 
     __slots__ = ["permissions"]
 
