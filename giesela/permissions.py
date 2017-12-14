@@ -16,7 +16,7 @@ class PermissionManager(BotReference):
 
     def __init__(self, guilds):
         """Init."""
-        self.loop = bot.loop  # noqa: F821
+        self.loop = super().bot.loop
 
         self.guilds = guilds
 
