@@ -11,6 +11,7 @@ import discord
 from giesela.config import Config
 from giesela.lib import module, reference
 from giesela.models import exceptions, signals
+from giesela.permissions import PermissionManager
 from giesela.utils import localisation
 from giesela.utils.opus_loader import load_opus_lib
 
@@ -28,6 +29,7 @@ class Giesela(discord.Client):
         reference.BotReference.bot = self
 
         self.config = Config.load()
+        self.permissions = PermissionManager.load()
         self.modules = []
 
         self.locks = defaultdict(asyncio.Lock)

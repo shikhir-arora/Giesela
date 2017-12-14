@@ -6,6 +6,7 @@ import os
 import random
 import string
 
+from giesela.constants import FileLocations
 from giesela.models.playlist import Playlist, PlaylistEntry
 
 log = logging.getLogger(__name__)
@@ -71,7 +72,7 @@ class PlaylistManager:
         """
         log.info("setting up playlist manager")
         log.debug("loading playlists")
-        raw_pls = await self.loop.run_in_executor(None, _load_playlists, "data/playlists")
+        raw_pls = await self.loop.run_in_executor(None, _load_playlists, FileLocations.PLAYLISTS)
         log.debug("found {} raw playlists".format(len(raw_pls)))
 
         playlists = []

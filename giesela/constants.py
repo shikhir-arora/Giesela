@@ -23,3 +23,5 @@ class FileLocations:
 
     TOKENS = "data/webiesela_tokens.json"
     EXPIRED_TOKENS = "data/cache/expired_tokens.txt"
+
+    PLAYLISTS = "data/playlists"

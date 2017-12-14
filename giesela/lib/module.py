@@ -97,6 +97,9 @@ class GieselaModule(metaclass=GieselaModuleMount):
         """Initialise module."""
         type(self).singleton = self
         self.bot = bot
+        self.config = bot.config
+        self.permissions = bot.permissions
+
         self.commands = {}
 
         for name, value in inspect.getmembers(self):
