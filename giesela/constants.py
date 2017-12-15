@@ -14,6 +14,8 @@ class Stats:
 class FileLocations:
     """Various files."""
 
+    FFMPEG = "bin/ffmpeg.exe"
+
     LOGGING = "config/logging.json"
     CONFIG = "config/config.json"
     PERMISSIONS = "config/permissions.json"

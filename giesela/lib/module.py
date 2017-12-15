@@ -10,11 +10,11 @@ from giesela.models.exceptions import (GieselaException, MissingParamsError,
 log = logging.getLogger(__name__)
 
 
-def command(match=None):
+def command(cmd_name=None, *, match=None):
     """Mark as Giesela command."""
     def decorator(func):
-        name = func.__name__
-        cmd = "^{}{}\b".format("!", name)
+        name = cmd_name or func.__name__
+        cmd = r"^{}{}\b".format("!", name)
         prog = re.compile(match or cmd)
 
         sig = inspect.signature(func)
