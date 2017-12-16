@@ -4,6 +4,9 @@ from giesela.lib import GieselaModule, command
 
 
 class HelloWorld(GieselaModule):
-    @command(r"^hello\b")
+    """A little script for testing stuff."""
+
+    @command()
     async def hello(self, channel):
-        await self.bot.send_message(channel, "hey")
+        """Hello world."""
+        await channel.send("world!")

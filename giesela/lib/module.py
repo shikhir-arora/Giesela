@@ -10,11 +10,12 @@ from giesela.models.exceptions import (GieselaException, MissingParamsError,
 log = logging.getLogger(__name__)
 
 
-def command(match=None):
+def command(cmd_name=None, *, match=None):
     """Mark as Giesela command."""
     def decorator(func):
-        name = func.__name__
-        prog = re.compile(match or name)
+        name = cmd_name or func.__name__
+        cmd = r"^{}{}\b".format("!", name)
+        prog = re.compile(match or cmd)
 
         sig = inspect.signature(func)
         parameters = sig.parameters
@@ -34,8 +35,8 @@ def command(match=None):
                 if params.pop("message", False):
                     kwargs["message"] = message
 
-                if params.pop("server", False):
-                    kwargs["server"] = message.server
+                if params.pop("guild", False):
+                    kwargs["guild"] = message.guild
 
                 if params.pop("channel", False):
                     kwargs["channel"] = message.channel
@@ -58,14 +59,15 @@ def command(match=None):
                     raise MissingParamsError(params.keys())
 
                 try:
-                    return await func(**kwargs)
+                    res = await func(**kwargs)
+                    return res or True
                 except AssertionError as e:
                     if e.args and isinstance(e.args[0], ParamError):
                         raise e.args[0]
 
                     raise e
             else:
-                return
+                return False
 
         setattr(wrapper, "_is_command", True)
 
@@ -96,6 +98,9 @@ class GieselaModule(metaclass=GieselaModuleMount):
         """Initialise module."""
         type(self).singleton = self
         self.bot = bot
+        self.config = bot.config
+        self.permissions = bot.permissions
+
         self.commands = {}
 
         for name, value in inspect.getmembers(self):
@@ -111,7 +116,9 @@ class GieselaModule(metaclass=GieselaModuleMount):
     async def _on_message(self, message):
         for name, func in self.commands.items():
             try:
-                await func(message)
+                res = await func(message)
+                if res:
+                    log.debug("{} triggered <{}>: \"{}\"".format(message.author, name, message.content))
             except GieselaException as e:
                 # TODO
                 raise
@@ -124,82 +131,138 @@ class GieselaModule(metaclass=GieselaModuleMount):
         """Call when module loaded."""
         pass
 
+    async def on_connected(self):
+        """Call when bot connected to Discord."""
+        pass
+
     async def on_ready(self):
         """Call when bot ready."""
+        pass
+
+    async def on_resumed(self):
+        """Call when the client resumes a session."""
         pass
 
     async def on_error(self, event, *args, **kwargs):
         """Call on error."""
         pass
 
-    async def on_message(self, message):
-        """Call when message received."""
+    async def on_typing(self, channel, user, when):
+        """Call when user starts typing."""
         pass
 
-    async def on_message_edit(self, before, after):
-        """Call when message edited."""
+    async def on_message(self, message):
+        """Call when message received."""
         pass
 
     async def on_message_delete(self, message):
         """Call when message deleted."""
         pass
 
-    async def on_channel_create(self, channel):
-        """Call when channel created."""
+    async def on_message_edit(self, before, after):
+        """Call when message edited."""
         pass
 
-    async def on_channel_update(self, before, after):
-        """Call when channel updated."""
+    async def on_reaction_add(self, reaction, user):
+        """Call when reaction added."""
         pass
 
-    async def on_channel_delete(self, channel):
-        """Call when channel deleted."""
+    async def on_reaction_remove(self, reaction, user):
+        """Call when reaction removed."""
+        pass
+
+    async def on_reaction_clear(self, message, reactions):
+        """Call when reaction added."""
+        pass
+
+    async def on_private_channel_create(self, channel):
+        """Call when private channel created."""
+        pass
+
+    async def on_private_channel_delete(self, channel):
+        """Call when private channel deleted."""
+        pass
+
+    async def on_private_channel_update(self, before, after):
+        """Call when private channel updated."""
+        pass
+
+    async def on_private_channel_pins_update(self, channel, last_pin):
+        """Call when private channel pins updated."""
+        pass
+
+    async def on_guild_channel_create(self, channel):
+        """Call when channel created in guild."""
+        pass
+
+    async def on_guild_channel_delete(self, channel):
+        """Call when guild channel deleted."""
+        pass
+
+    async def on_guild_channel_update(self, before, after):
+        """Call when guild channel updated."""
+        pass
+
+    async def on_guild_channel_pins_update(self, channel, last_pin):
+        """Call when guild channel pins updated."""
         pass
 
     async def on_member_join(self, member):
-        """Call when member joined."""
+        """Call when member joins guild."""
         pass
 
     async def on_member_remove(self, member):
-        """Call when member removed (left)."""
+        """Call when member leaves guild."""
         pass
 
     async def on_member_update(self, before, after):
-        """Call when member updated."""
+        """Call when member updates their profile."""
         pass
 
-    async def on_server_join(self, server):
-        """Call after joining a server."""
+    async def on_guild_join(self, guild):
+        """Call when giesela joins guild."""
         pass
 
-    async def on_server_update(self, before, after):
-        """Call when server updated."""
+    async def on_guild_remove(self, guild):
+        """Call when giesela leaves guild."""
         pass
 
-    async def on_server_role_create(self, server, role):
+    async def on_guild_update(self, before, after):
+        """Call when guild is updated."""
+        pass
+
+    async def on_guild_role_create(self, role):
         """Call when role created."""
         pass
 
-    async def on_server_role_delete(self, server, role):
+    async def on_guild_role_delete(self, role):
         """Call when role deleted."""
         pass
 
-    async def on_server_role_update(self, server, role):
+    async def on_guild_role_update(self, before, after):
         """Call when role updated."""
         pass
 
-    async def on_voice_state_update(self, before, after):
-        """Call when voice state updated."""
+    async def on_guild_emojis_update(self, guild, before, after):
+        """Call when guild adds or deletes emoji."""
         pass
 
-    async def on_member_ban(self, member):
-        """Call when member banned."""
+    async def on_guild_available(self, guild):
+        """Call when a guild becomes available."""
         pass
 
-    async def on_member_unban(self, member):
-        """Call when member unbanned."""
+    async def on_guild_unavailable(self, guild):
+        """Call when a guild becomes unavailable."""
         pass
 
-    async def on_typing(self, channel, user, when):
-        """Call when user starts typing."""
+    async def on_voice_state_update(self, member, before, after):
+        """Call when voice state is updated."""
+        pass
+
+    async def on_member_ban(self, guild, user):
+        """Call when a user gets banned from a guild."""
+        pass
+
+    async def on_member_unban(self, guild, user):
+        """Call when a user gets unbanned from a guild."""
         pass

@@ -14,6 +14,8 @@ class Stats:
 class FileLocations:
     """Various files."""
 
+    FFMPEG = "bin/ffmpeg.exe"
+
     LOGGING = "config/logging.json"
     CONFIG = "config/config.json"
     PERMISSIONS = "config/permissions.json"
@@ -21,6 +23,7 @@ class FileLocations:
     LOCALISATION = "config/locale.json"
     LOCALE_FOLDER = "locale"
 
-    CACHE_FOLDER = "data/cache"
+    TOKENS = "data/webiesela_tokens.json"
+    EXPIRED_TOKENS = "data/cache/expired_tokens.txt"
 
-    EXPIRED_TOKENS = CACHE_FOLDER + "/expired_tokens.txt"
+    PLAYLISTS = "data/playlists"

@@ -5,25 +5,23 @@ import logging
 
 import websockets
 
+from giesela.lib.reference import BotReference
+
 from .manager import Manager
 from .models.connection import Connection
-from .models.webiesela_user import WebieselaUser
 
 log = logging.getLogger(__name__)
 
 
-class Server:
+class Server(BotReference):
     """A websocket server."""
 
-    bot = None
     manager = None
     socket_server = None
 
     @classmethod
-    async def serve(cls, bot):
+    async def serve(cls):
         """Start listening to incoming connections."""
-        cls.bot = bot
-        WebieselaUser.bot = bot
         cls.manager = Manager(cls)
         await cls.manager.load_extensions()
 

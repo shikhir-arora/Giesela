@@ -8,9 +8,11 @@ import secrets  # new python 3.6 module
 import string
 import time
 
+from giesela.constants import FileLocations
+from giesela.models import GieselaUser
+
 from ..extension import Extension, request
 from ..models.exceptions import TokenExpired, TokenUnknown
-from ..models.webiesela_user import WebieselaUser
 
 log = logging.getLogger(__name__)
 
@@ -60,13 +62,13 @@ class Token:
     @classmethod
     def from_dict(cls, data):
         """Create instance from serialised dict."""
-        data["webiesela_user"] = WebieselaUser.from_dict(data.get("webiesela_user"))
+        data["webiesela_user"] = GieselaUser.from_dict(data.get("webiesela_user"))
         return cls(**data)
 
     @classmethod
     def create(cls, member, token_length, lifespan):
         """Create a new token for a member."""
-        webiesela_user = WebieselaUser.from_member(member)
+        webiesela_user = GieselaUser.from_member(member)
         token = secrets.token_hex(token_length)
         now = time.time()
 
@@ -90,21 +92,19 @@ class Auth(Extension):
     expired_tokens = []
 
     @classmethod
-    def setup(cls, config):
+    def setup(cls):
         """Get needed values from the config."""
-        cls.token_lifespan = config.token_lifespan
-        cls.registration_token_lifespan = config.registration_token_lifespan
-        cls.max_expired_tokens = config.max_expired_tokens
-        cls.token_length = config.token_length
-        cls.registration_token_length = config.registration_token_length
-        cls.tokens_file = config.tokens_file
-        cls.expired_tokens_file = config.expired_tokens_file
+        cls.token_lifespan = 2 * 30 * 24 * 60 * 60  # 2 months
+        cls.registration_token_lifespan = 10 * 60  # 10 minutes
+        cls.max_expired_tokens = 300
+        cls.token_length = 32
+        cls.registration_token_length = 5
 
     @classmethod
     async def load_tokens(cls):
         """Load all the tokens from file."""
         try:
-            with open(cls.tokens_file, "r") as f:
+            with open(FileLocations.TOKENS, "r") as f:
                 data = json.load(f)
 
             for token in data:
@@ -124,7 +124,7 @@ class Auth(Extension):
             log.error("Couldn't load tokens file", exc_info=True)
 
         try:
-            with open(cls.expired_tokens_file, "r") as f:
+            with open(FileLocations.EXPIRED_TOKENS, "r") as f:
                 cls.expired_tokens = f.readlines()[:cls.max_expired_tokens]
         except FileNotFoundError:
             log.warning("Didn't find an expired tokens file")
@@ -135,13 +135,13 @@ class Auth(Extension):
     def save_tokens(cls):
         """Save tokens to file."""
         try:
-            with open(cls.tokens_file, "w+") as f:
+            with open(FileLocations.TOKENS, "w+") as f:
                 json.dump([t.to_dict() for t in cls.tokens.values()], f, indent=2)
         except Exception:
             log.error("Couldn't save tokens")
 
         try:
-            with open(cls.expired_tokens_file, "w+") as f:
+            with open(FileLocations.EXPIRED_TOKENS, "w+") as f:
                 f.writelines(cls.expired_tokens)
         except Exception:
             log.error("Couldn't save expired tokens")
@@ -179,7 +179,7 @@ class Auth(Extension):
         """When ready, load all the tokens."""
         cls = type(self)
 
-        cls.setup(self.bot.config)
+        cls.setup()
         await cls.load_tokens()
 
     @request("authorise", require_auth=False)
