@@ -1,0 +1,9 @@
+{
+  "token": {
+    "none": "Du hesch no kei Token feschtgleit. Due däh bitte ir config.json Datei feschtlegä, oder füehr s'Setup us!",
+    "invalid": "Dr Token wo du agäh hesch isch fausch!"
+  },
+  "config": {
+    "missing_keys": "D'Config isch kaputt! Es fähle die Iträg:\n> {}"
+  }
+}
