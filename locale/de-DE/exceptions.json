@@ -1,0 +1,9 @@
+{
+  "token": {
+    "none": "Es wurde kein Token festgelegt. Bitte füge deinen Discord Token in der config.join Datei ein, oder führe das Setup durch!",
+    "invalid": "Der eingegebene Token ist ungültig!"
+  },
+  "config": {
+    "missing_keys": "Die Config-Datei ist nicht vollständig! Es fehlen die folgenden Einträge:\n> {}"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "setup": {
+    "language ": "Wat is uw voorkeurstaal? ",
+    "token": "Geef het token van uw boot op: "
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "setup": {
+    "language ": "Was ist deine bevorzugte Sprache? ",
+    "token": "Bitte gib den Token deines Discord Bots ein: "
+  }
+}
