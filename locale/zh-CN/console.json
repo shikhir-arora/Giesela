@@ -1,6 +1,6 @@
 {
   "setup": {
-    "language ": "What is your preferred language? ",
-    "token": "Please provide the token for your bot: "
+    "language ": "你喜欢什么语言？ ",
+    "token": "请为您的机器人提供令牌： "
   }
 }

@@ -1,9 +1,9 @@
 {
   "token": {
-    "none": "You haven't set a token yet. Please set the token in the config.json file or run the setup!",
-    "invalid": "The token you provided is invalid!"
+    "none": "你还没有设置一个令牌。 \n请在config.json文件中设置标记或运行设置！",
+    "invalid": "您提供的令牌无效！"
   },
   "config": {
-    "missing_keys": "The config file seems to be broken! It's missing the following keys:\n> {}"
+    "missing_keys": "配置文件似乎被打破了！ 它缺少以下键：> {}"
   }
 }

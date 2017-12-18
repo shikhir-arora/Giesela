@@ -1,6 +1,6 @@
 {
   "setup": {
     "language ": "Jaki jest twój preferowany język? ",
-    "token": "Proszę podać token dla twojego bota: "
+    "token": "Proszę podać token dla swojego bota: "
   }
 }

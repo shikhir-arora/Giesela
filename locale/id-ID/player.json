@@ -1,0 +1,6 @@
+{
+  "now_playing": {
+    "generic": "Mainkan sekarang **{title}**",
+    "timestamp_entry": "Mainkan sekarang **{sub_entry}** ({index}{ordinal} masuk) dari \"{title}\""
+  }
+}
