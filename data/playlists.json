@@ -1,0 +1,17 @@
+{
+	"example": {
+		"location": "data/playlists/example.gpl",
+		"author": {
+			"id": "243902693666455553",
+			"name": ".vlexar",
+			"display_name": "vlexar",
+			"avatar_url": "https://cdn.discordapp.com/avatars/243902693666455553/a_60ef9d891d32b83763db1726f04757bd.gif?size=1024",
+			"colour": "#FFFFFF"
+		},
+		"entries": 1,
+		"replays": 1,
+		"description": "Just a placeholder",
+		"cover_url": "https://i.imgur.com/zEcCzT3.png",
+		"name": "example"
+	}
+}
