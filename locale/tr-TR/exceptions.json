@@ -1,0 +1,9 @@
+{
+  "token": {
+    "none": "Henüz bir jeton ayarlamadınız. Lütfen belirteci config.json dosyasına göre ayarlayın veya kurulumu çalıştırın!",
+    "invalid": "Sağladığınız jeton geçerli değil!"
+  },
+  "config": {
+    "missing_keys": "Biçimlendirme dosyası kırılmış görünüyor! Bu tuşlar kayıp:"
+  }
+}

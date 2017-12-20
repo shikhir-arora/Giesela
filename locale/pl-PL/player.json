@@ -1,6 +1,6 @@
 {
-  "now_playing":{
-    "generic":"Now playing **{title}**",
-    "timestamp_entry":"Now playing **{sub_entry}** ({index}{ordinal} entry) from \"{title}\""
+  "now_playing": {
+    "generic": "Teraz odtwarzane **{title} **",
+    "timestamp_entry": "Teraz odtwarzane **{sub_entry} ** (wpis{index}{ordinal}) z \"{title}\""
   }
 }

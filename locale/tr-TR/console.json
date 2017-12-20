@@ -1,0 +1,6 @@
+{
+  "setup": {
+    "language ": "Tercih ettiğiniz dil hangisi? ",
+    "token": "Lütfen botunuz için jeton temin edin: "
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "token": {
+    "none": "Er is geen token ingesteld. Voer uw token in het config.join-bestand in of voer de installatie uit!",
+    "invalid": "Het ingevoerde token is ongeldig!"
+  },
+  "config": {
+    "missing_keys": "Het configuratiebestand is niet compleet! De volgende sleutels ontbreken:\n> {}"
+  }
+}

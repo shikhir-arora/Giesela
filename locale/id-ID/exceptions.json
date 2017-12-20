@@ -1,0 +1,9 @@
+{
+  "token": {
+    "none": "Anda belum mengatur token. Silahkan atur token di file config.json atau jalankan setup!",
+    "invalid": "Token yang Anda berikan tidak valid!"
+  },
+  "config": {
+    "missing_keys": "File konfigurasi sepertinya rusak! Ini tidak memiliki kunci berikut: \" > {}"
+  }
+}

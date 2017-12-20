@@ -1,0 +1,9 @@
+{
+  "token": {
+    "none": "No has establecido un token aún. Por favor, ¡indica el token en el archivo config.json o ejecuta la instalación!",
+    "invalid": "¡El token que has ingresado es inválido!"
+  },
+  "config": {
+    "missing_keys": "¡El archivo de configuración parece estar roto! Le faltan las siguientes claves:\n> {}"
+  }
+}

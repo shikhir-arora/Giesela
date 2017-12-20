@@ -1,0 +1,9 @@
+{
+  "token": {
+    "none": "Token nie został podany. Proszę ustawić token w pliku config.json lub włączyć instalator!",
+    "invalid": "Podany token jest nieprawidłowy!"
+  },
+  "config": {
+    "missing_keys": "Wygląda na to że plik konfiguracyjny jest uszkodzony! Brakuje następujących kluczy:\n> {}"
+  }
+}
