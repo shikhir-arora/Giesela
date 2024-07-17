@@ -2,7 +2,7 @@ discord.py[voice]
 youtube_dl
 pip
 cffi==1.6.0; sys_platform == 'win32'
-numpy==1.12.0
+numpy==1.21.0rc1
 
 https://github.com/Imgur/imgurpython/archive/master.zip#egg=imgurpython
 spotipy
@@ -14,3 +14,10 @@ beautifulsoup4
 discogs_client
 python-dateutil
 raven
+certifi>=2024.7.4 # not directly required, pinned by Snyk to avoid a vulnerability
+idna>=3.7 # not directly required, pinned by Snyk to avoid a vulnerability
+imageio>=2.6.0 # not directly required, pinned by Snyk to avoid a vulnerability
+redis>=4.3.6 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.31.0 # not directly required, pinned by Snyk to avoid a vulnerability
+tqdm>=4.66.3 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
