@@ -2,7 +2,7 @@ discord.py[voice]
 youtube_dl
 pip
 cffi==1.6.0; sys_platform == 'win32'
-numpy==1.12.0
+numpy==1.22.2
 
 https://github.com/Imgur/imgurpython/archive/master.zip#egg=imgurpython
 spotipy
@@ -14,3 +14,4 @@ beautifulsoup4
 discogs_client
 python-dateutil
 raven
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
